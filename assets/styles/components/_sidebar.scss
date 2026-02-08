@@ -1,0 +1,168 @@
+// 
+// Sidebar
+// Theme Component
+
+// sidebar menu
+.nav-link-sidebar .nav-item .nav-link{
+  color: var(--#{$prefix}body-color);
+  border-radius: $border-radius;
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.nav.nav-link-sidebar .nav-item .nav-link .nav-icon {
+  background: $white;
+  color: $dark;
+  height: 2.125rem;
+  width: 2.125rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+}
+.nav .nav-item .nav-link:hover .nav-icon {
+  background: var(--#{$prefix}gray-900);
+  color: $white;
+}
+
+.nav .nav-item .nav-link.active .nav-icon {
+  background: var(--#{$prefix}gray-900);
+  color: $white;
+}
+
+.nav-link-sidebar .nav-item .nav-link:hover{
+  background-color: $white;
+  color: var(--#{$prefix}heading-color);
+}
+
+.nav-link-sidebar .nav-item .nav-link.active{
+  background-color: $white;
+  color: var(--#{$prefix}heading-color);
+}
+
+// Sidebar collapse menu
+.nav-link-sidebar .sidebar-submenu .nav-item{
+  padding-left: 2.6rem;
+  .nav-link:hover{
+    background-color: transparent !important;
+  }
+  .nav-link.active{
+    background-color: transparent !important;
+  }
+}
+.nav-link-sidebar .nav-item [data-bs-toggle=collapse] {
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    background: var(--#{$prefix}gray-600);
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 7px;
+    margin: auto 12px;
+    transition: transform 0.3s cubic-bezier(0.8, 0.2, 0.5, 0.1), background 0.2s ease-in-out;
+    top: 0;
+    bottom: 0;
+  }
+
+  &:before {
+    transform: rotate(-40deg);
+    right: 0;
+  }
+
+  &:after {
+    transform: rotate(40deg);
+    right: 5px;
+  }
+
+  &[aria-expanded=true] {
+    &:before {
+      transform: rotate(40deg);
+      background: var(--#{$prefix}heading-color);
+    }
+
+    &:after {
+      transform: rotate(-40deg);
+      background: var(--#{$prefix}heading-color);
+    }
+  }
+}
+
+// Sidebar menu item hover and active 
+.nav-link-sidebar > .nav-item > .nav-link[data-bs-toggle=collapse][aria-expanded=true] {
+  background: $white;
+  color: var(--#{$prefix}heading-color);
+  border-radius: $border-radius;
+}
+.nav-link-sidebar > .nav-item > .nav-link[data-bs-toggle=collapse][aria-expanded=true] .nav-icon {
+  background: var(--#{$prefix}gray-900);
+  color: $white !important;
+}
+.nav-link-sidebar .nav-link{
+  &:active , &:hover{
+    color: var(--#{$prefix}heading-color) !important;
+  }
+}
+
+// Sidebar bg light
+.nav-sidebar-bg-light .nav-item .nav-link{
+  font-size: 0.9rem;
+  padding: 0.4rem 0.5rem;
+  &.active, &:hover{
+    background-color: var(--#{$prefix}gray-200);
+    border-radius: $border-radius;
+    color: var(--#{$prefix}gray-900) !important;
+  }
+}
+
+// Icon color
+.nav-sidebar-bg-light .nav-item {
+  .nav-link {
+    .nav-icon {
+      background: $light !important;
+      color: $dark !important;
+      height: 2rem !important;
+      width: 2rem !important;
+      font-size: 0.9em !important;
+    }
+    &:hover {
+      .nav-icon {
+        background: $mode !important;
+        color: $dark !important;
+      }
+    }
+    &.active {
+      .nav-icon {
+        background: $mode !important;
+        color: $dark !important;
+      }
+    }
+  }
+}
+
+// Sidebar menu item hover and active 
+.nav-sidebar-bg-light .nav-item .sidebar-submenu .nav-link{
+  &.active , &:hover{
+    color: var(--#{$prefix}primary) !important;
+  }  
+}
+.nav-sidebar-bg-light .nav-item .nav-link[data-bs-toggle=collapse][aria-expanded=true] {
+  background: var(--#{$prefix}gray-200) !important;
+  color: var(--#{$prefix}gray-900) !important;
+}
+.nav-sidebar-bg-light > .nav-item > .nav-link[data-bs-toggle=collapse][aria-expanded=true] .nav-icon {
+  background: $mode !important;
+  color: $dark !important;
+}
+// Dropdown arrow
+.nav-sidebar-bg-light .nav-item [data-bs-toggle=collapse][aria-expanded=true] {
+  &:before, &:after {
+    background: var(--#{$prefix}gray-900) !important;
+  }
+}
+

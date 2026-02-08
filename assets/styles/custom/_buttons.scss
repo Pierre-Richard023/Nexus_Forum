@@ -1,0 +1,211 @@
+// 
+// buttons.scss
+// Extended from Bootstrap
+// 
+
+// 
+// Additional styles for theme
+// 
+
+.btn {
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+  margin-bottom: 6px;
+}
+.input-group .btn{
+  margin-bottom: 0;
+}
+.btn-xs{
+  padding: 0.4rem 0.6rem;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  border-radius: $btn-border-radius-sm;
+}
+
+// button light
+.btn-light {
+  background: var(--#{$prefix}light);
+  border-color: var(--#{$prefix}light);
+  color: var(--#{$prefix}gray-900);
+  &.active, &:active, &:focus, &:hover {
+    background: var(--#{$prefix}gray-300);
+    border-color: var(--#{$prefix}gray-300);
+    color: var(--#{$prefix}gray-900);
+  }
+}
+
+// button white
+.btn-white {
+  background: $white;
+  color: $gray-800;
+  &.active, &:active, &:focus, &:hover {
+    background: $gray-200;
+    color: $gray-800;
+  }
+}
+.btn-outline-white {
+  background: transparent;
+  border-color: $white;
+  color: $white;
+  &.active, &:active, &:focus, &:hover {
+    color: $gray-800;
+    background: $white;
+  }
+}
+.btn-outline-light{
+  background: transparent;
+  border-color: $gray-400;
+  color: $body-color;
+	&:active, &:hover, &:focus{
+		background: $gray-400 !important;
+		border-color: $gray-400;
+		color: $gray-800;
+	}
+}
+.btn-check:checked + .btn-outline-light
+{
+  background: $gray-400;
+  border-color: $gray-400;
+  color: $gray-800;
+}
+
+// button round
+.btn-round{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+  i{
+    margin:0; 
+  }
+  // Quick fix for play button centered
+  .fa-play{
+    padding-left: 3px;
+  }
+  &.btn-lg{
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+  }
+  &.btn-sm{
+    height: 32px;
+    width: 32px;
+    line-height: 31px;
+    i{
+      font-size: .8rem;
+    }
+  }
+}
+
+// Quick fix for play button centered in RTL
+/*rtl:raw:
+.btn-round .fa-play{
+  padding-left: 3px;
+  padding-right: 0;
+}
+*/
+
+// button soft
+@mixin button-soft-variant($color, $soft-background: rgba($color, .1)) {
+  color: $color;
+  background-color: $soft-background;
+  &:hover {
+    color: color-contrast($color);
+    background-color: $color;
+  }
+}
+@each $color, $value in $theme-colors {
+  .btn-#{$color}-soft {
+    @include button-soft-variant($value);
+  }
+}
+
+.btn-check:focus + .btn, .btn-round-shadow:focus {
+  box-shadow: none;
+}
+
+// See more
+.btn-more i{
+  transition: $transition-base;
+}
+.btn-more[aria-expanded="true"] i{
+  transform: rotate(180deg);
+  transition: $transition-base;
+  transform-origin: center;
+
+}
+.btn-more .see-more{
+  display:block;
+}
+.btn-more .see-less{
+  display:none;
+}
+.btn-more[aria-expanded="true"] .see-more{
+  display:none;
+}
+.btn-more[aria-expanded="true"] .see-less{
+  display:block;
+}
+
+//Vote button check
+.btn-vote{
+  padding: 0;
+  color: var(--#{$prefix}gray-400);
+}
+.vote-count{
+  color:  var(--#{$prefix}gray-700);
+}
+.btn-check:checked + .btn-vote{
+  color: $primary;
+  border: 1px solid transparent;
+}
+
+// Button icon
+.btn-icon {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  width: $btn-icon-size;
+  height: $btn-icon-size;
+  padding: 0;
+
+  &.btn-xs {
+    width: $btn-icon-xs-size;
+    height: $btn-icon-xs-size;
+    font-size: $font-size-base * 0.8;
+  }
+
+  &.btn-sm {
+    width: $btn-icon-sm-size;
+    height: $btn-icon-sm-size;
+    font-size: $font-size-base * 0.8;
+  }
+
+  &.btn-lg {
+    width: $btn-icon-lg-size;
+    height: $btn-icon-lg-size;
+    font-size: $font-size-base * 1.4375;
+  }
+
+  &.btn-xl {
+    width: $btn-icon-xl-size;
+    height: $btn-icon-xl-size;
+    font-size: $font-size-base * 1.75;
+  }
+}
+
+// Button success soft check
+.btn-check:active+.btn-success-soft-check, .btn-check:checked+.btn-success-soft-check, .btn-success-soft-check.active, .btn-success-soft-check:active, .show>.btn-success-soft-check.dropdown-toggle {
+  background-color: rgba(var(--#{$prefix}success-rgb), 0.2);
+  color: var(--#{$prefix}success);
+  border: 1px solid  var(--#{$prefix}success);
+}
+.btn-check:focus + .btn, .btn-round-shadow:focus {
+  box-shadow: none;
+}

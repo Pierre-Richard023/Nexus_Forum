@@ -1,0 +1,60 @@
+// 
+// form-control.scss
+// Extended from Bootstrap
+// 
+
+//
+// Additional style for theme
+//
+
+.form-control{
+  background-color: $mode;
+}
+.form-control:focus{
+  background-color: $mode;
+}
+
+//Input background light
+.input-borderless {
+  .form-label{
+    color:$light;
+    font-weight: 400;
+  }
+  .form-control {
+    border: 1px solid transparent !important;
+    border-radius: $input-border-radius;
+
+    &:focus {
+      border: 1px solid $primary !important;
+    }
+  }
+}
+
+// Select form background dark
+.input-bg-light {
+  .form-control {
+    background-color: var(--#{$prefix}light) !important;
+    border: 1px solid var(--#{$prefix}light) !important;
+    border-radius: $input-border-radius;
+
+    &:focus {
+      border: 1px solid $primary !important;
+    }
+  }
+}
+
+// Flatpickr remove calender icon
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.input-border .form-control{
+  background: transparent !important;
+}
+
+.form-label-dark{
+  color: var(--#{$prefix}gray-900);
+}

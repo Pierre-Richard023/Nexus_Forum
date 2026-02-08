@@ -1,0 +1,340 @@
+// 
+// general.scss
+// Theme general elements and helper styling
+
+// Bg white and dark according to theme mode
+.bg-mode{
+  background: $mode;
+}
+
+// plyr and GLightbox theme
+.plyr__control--overlaid, 
+.plyr--audio .plyr__control.plyr__tab-focus, 
+.plyr--audio .plyr__control:hover, 
+.plyr--audio .plyr__control[aria-expanded=true],
+.plyr--video .plyr__control.plyr__tab-focus, 
+.plyr--video .plyr__control:hover, 
+.plyr--video .plyr__control[aria-expanded=true],
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]:before{
+  background: $primary;
+}
+.plyr--full-ui input[type=range]{
+  color: $primary;
+}
+
+
+/* rtl:raw:
+.glightbox-clean .gclose, .glightbox-modern .gclose{
+  right: auto !important;
+  left: 20px;
+}
+*/
+
+// Search
+.nav-search .dropdown-menu{
+  top: 120%;
+  visibility: hidden;
+  opacity: 0;
+  display: block;
+  transition: $transition-base;
+  width: 300px;
+  left: auto;
+  right: 0;
+}
+.nav-search .dropdown-menu.show{
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+@include media-breakpoint-down(sm) {
+  .nav-search .dropdown-menu{
+    width: 100%;
+  }
+}
+
+// Back to top
+.back-top {
+  cursor: pointer;
+  position: fixed !important;
+  bottom: 40px;
+  right: 40px;
+  display: block;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: $transition-base;
+  background: var(--#{$prefix}primary);
+  color: $white;
+  border-radius: 100%;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  &:before{
+    content: "\f176";
+    font-family: $fa-font-family;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover{
+    background: var(--bs-link-hover-color);
+    color: $white;
+  }
+  &.back-top-show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .back-top {
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    &:before{
+      font-size: 0.6rem;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .back-top {
+    display: none;
+  }
+}
+
+// To flip element in RTL
+/* rtl:raw:
+  .rtl-flip {
+    transform: scaleX(-1);
+  }
+  .rtl-flip.bi:before{
+    transform: inherit;
+  }
+*/
+
+// Sticky element
+.sticky-element {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  width: 300px;
+  visibility: hidden;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: $transition-base;
+}
+
+.sticky-element.sticky-element-sticked {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+// Quick fix for bootstrap font width
+.bi.fa-fw{
+  display: inline-block;
+}
+
+// pre loader
+.preloader {
+  background-color: $white;
+  position: fixed;
+  z-index: 1190;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .preloader-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Vertical Divider
+.divider-vline{
+  padding-right: 0.825rem;
+  margin-right: 0.825rem;
+  border-right: 0.1rem solid $gray-300;
+}
+
+// Vote
+.user-vote{
+  flex: 0 0 auto;
+}
+
+// Notification badge
+.animation-blink {
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+// nav achievement divider
+.nav.nav-achievement-divider{
+  position: relative;
+  a:not(.dropdown-item){
+    color: inherit;
+  }
+  .nav-item{
+    position: relative;
+      &:before{
+      content: "\";
+      position: absolute;
+      font-family: "Font Awesome 6 Free";
+      font-weight: bold;
+      top: 22%;
+      font-size: 0.5rem;
+    }
+  }
+
+  .nav-item.dote-bronze:before{
+    color: #cd7f32;
+    left: 0;
+  }
+
+  .nav-item.dote-silver:before{
+    color: #c0c0c0;
+    left: 0;
+  }
+
+  .nav-item.dote-gold:before{
+    color: #d4af37;
+    left: 0;
+  }
+
+  .nav-item{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+// nav button divider
+.nav.nav-divider-slash{
+  a:not(.dropdown-item){
+    color: inherit;
+  }
+  .nav-item+.nav-item:before{
+    content: "/";
+    color: inherit;
+    padding-left: .55rem;
+    padding-right: .55rem;
+  }
+}
+
+// Blockquote line
+.blockquote-line-primary{
+  position: relative;
+}
+.blockquote-line-primary:after{
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: $primary;
+  top: 0;
+  left: 0;
+}
+
+.comment-wrap{
+  position: relative;
+}
+.comment-wrap .comment-line-inner{
+position: absolute;
+left: 20px;
+top: 0;
+width: 2px;
+background-color: var(--#{$prefix}border-color);
+height: 100%;
+}
+
+*:focus-visible{
+  outline: none;
+}
+
+// More content
+.more-content{
+  position: relative;
+}
+.btn-more-content{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &[aria-expanded=true]{
+    display: none;
+  }
+}
+.more-content .content-wrap.collapse {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+.more-content .content-wrap.collapse.show {
+  -webkit-line-clamp: inherit;
+}
+
+// Card chat height calculation
+.card-chat {
+  height: calc(100vh - 6.1125rem - 1.5rem);
+}
+.card-chat-list {
+  height: calc(100vh - 10.112rem - 1.5rem);
+}
+.chat-conversation-content {
+  height: calc(100% - 5.25rem);
+}
+.chat-tab-list {
+  height: calc(100% - 0.75rem);
+}
+
+//  Overlay scrollbar bg color
+ .os-theme-dark>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+  background: var(--#{$prefix}gray-800);
+  opacity: 0.1;
+}
+
+// Element hover
+.element-hover .element-hover-item{
+  visibility: hidden;
+  // transition: $transition-base;
+}
+.element-hover:hover .element-hover-item{
+  visibility: visible;
+}
+
+// Responsive sticky position from top 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .top#{$infix}-70px{
+      top: 70px !important;
+    }
+  }
+}
+
+// Fake password icon 
+.fakepasswordicon { 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.fakepasswordicon.fa-eye:before {
+  content: "\f06e" !important;
+}

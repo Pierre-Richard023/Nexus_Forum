@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<title>
+			{% block title %}
+				Nexus Forum
+			{% endblock %}
+		</title>
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+
+		<meta name="description" content=""/>
+		<meta name="keywords" content=""/>
+		<meta name="author" content=""/>
+
+
+		<link rel="icon" type="image/x-icon" href="{{asset( "favicons/favicon.ico")}}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{asset( "favicons/favicon-16x16.png")}}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{asset( "favicons/favicon-32x32.png")}}">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{asset( "favicons/apple-touch-icon.png")}}">
+		<link rel="icon" type="image/png" sizes="192x192" href="{{asset( "favicons/android-chrome-192x192.png")}}">
+		<link rel="icon" type="image/png" sizes="512x512" href="{{asset( "favicons/android-chrome-512x512.png")}}">
+		<meta name="theme-color" content="#ffffff">
+
+
+		{% block stylesheets %}
+			{{ encore_entry_link_tags('app') }}
+		{% endblock %}
+
+		{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+		{% endblock %}
+	</head>
+	<body>
+
+		{% include "_header.html.twig" %}
+
+		<main>
+			{% block body %}{% endblock %}
+		</main>
+
+		{% include "_footer.html.twig" %}
+
+	</body>
 </html>

@@ -1,0 +1,37 @@
+// 
+// card.scss
+// Extended from Bootstrap
+//
+
+//
+// Bootstrap Overrides
+//
+
+// Quick fix for border radius issue in safari
+// .card, .overflow-hidden{
+//   will-change: transform;
+// }
+
+@media not all and (min-resolution:.001dpcm) { 
+	@supports (-webkit-appearance:none) {
+		.card, .overflow-hidden{
+			will-change: transform;
+		}
+	}
+}
+
+.card-header-title{
+  margin-bottom: 0;
+}
+
+// 
+// Additional styles for theme
+// 
+
+// Card image overlay z index
+.card{
+  .card-img-overlay{
+    z-index: 2;
+  }
+}
+

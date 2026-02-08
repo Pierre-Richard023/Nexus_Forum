@@ -1,0 +1,43 @@
+// 
+// pagination.scss
+// Extended from Bootstrap
+// 
+
+// 
+// Additional style for theme
+//
+
+// For better responsive
+.pagination {
+  .page-item{
+    margin-bottom: 5px;
+    float: left;
+  }
+}
+
+//Pagination primary soft
+.pagination-primary-soft{
+  border: none;
+  padding: 4px;
+  border-radius: $border-radius;
+  .page-item{
+    margin: 4px;
+    &.page-item.active .page-link{
+      color: $white;
+      background-color: var(--#{$prefix}primary);
+    }
+  }
+  .page-link{
+    border: transparent;
+    border-radius: $border-radius !important;
+    color:var(--#{$prefix}gray-600);
+    background-color: transparent;
+    &:hover {
+      z-index: 2;
+      color: var(--#{$prefix}primary);
+      background-color: rgba($primary,.1);
+      border-color: var(--#{$prefix}primary);
+    }
+  }
+  
+}

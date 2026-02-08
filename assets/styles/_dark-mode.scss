@@ -1,0 +1,299 @@
+// 
+// dark-mode.scss
+// Theme Component
+// Dark mode related CSS
+
+[data-bs-theme="dark"] {
+
+  // //Dark mode styles
+    --bs-light: #292a2d;
+    --bs-gray-100: #1f2122;
+    --bs-gray-200: #3c3e41;
+    --bs-gray-300: #5f5f68;
+    --bs-gray-400: #a1a1a8;
+    --bs-gray-500: #bfc0c9;
+    --bs-gray-600: #c5c6cc;
+    --bs-gray-700: #ffffffb3;
+    --bs-gray-800: #ffffffd9;
+    --bs-gray-900: #fff;
+    --bs-body-bg: #1b1b1c;
+    --bs-body-bg-rgb: #1b1b1c;
+    --bs-body-color: #c4c5c7;
+    --bs-heading-color: var(--bs-gray-900);
+    --bs-mode:#111013;
+    --bs-border-color: rgba(255, 255, 255, 0.07);
+
+    body, p, ol {
+      color: var(--#{$prefix}body-color);
+    }
+    .bg-mode{
+      background: var(--#{$prefix}mode);
+    }
+
+    .navbar {
+    --bs-navbar-color: var(--#{$prefix}gray-800);
+    --bs-navbar-hover-color: var(--#{$prefix}primary);
+    --bs-navbar-disabled-color: var(--#{$prefix}gray-400);
+    --bs-navbar-active-color: var(--#{$prefix}primary);
+    }
+
+    .navbar-light-static .theme-icon-active svg{
+      fill: var(--#{$prefix}gray-900);
+    }
+    .navbar-light-static .theme-icon-active .nav-link.active svg{
+      fill: var(--#{$prefix}primary);
+    }
+    .nav{
+      --bs-nav-link-color: var(--#{$prefix}gray-600);
+    }
+    .dropdown-menu {
+      --bs-dropdown-bg: var(--bs-mode);
+      --bs-dropdown-link-hover-color: var(--#{$prefix}primary);
+      --bs-dropdown-link-active-color: var(--#{$prefix}primary);
+      --bs-dropdown-link-disabled-color: var(--#{$prefix}gray-200);
+      box-shadow:none;
+      border: 1px solid var(--#{$prefix}border-color);
+    }
+
+    .btn-link {
+      --bs-link-color: var(--#{$prefix}primary);
+      --bs-btn-hover-color: var(--#{$prefix}link-hover-color);
+      --bs-btn-active-color: var(--#{$prefix}link-hover-color);
+    }
+    .modal {
+      --bs-modal-bg: var(--#{$prefix}body-bg);
+      --bs-modal-border-color: var(--#{$prefix}border-color-translucent);
+      --bs-modal-footer-border-color: var(--#{$prefix}border-color);
+    }
+    .table-light {
+      --bs-table-bg: var(--#{$prefix}light);
+      --bs-table-color: var(--#{$prefix}gray-900);
+    }
+    .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+      --bs-offcanvas-bg: var(--#{$prefix}body-bg);
+    }
+    .nav-pills {
+      --bs-nav-pills-link-active-bg: var(--#{$prefix}primary);
+    }
+    .card{
+      --bs-card-cap-bg: var(--#{$prefix}mode);
+      --bs-card-bg: var(--#{$prefix}mode);
+    }
+
+    .btn-dark {
+      --#{$prefix}btn-color: #{$gray-100} !important;
+      --#{$prefix}btn-hover-color: #{$gray-100} !important;
+      --#{$prefix}btn-active-color: #{$gray-100} !important;
+      --#{$prefix}btn-bg: #{darken($gray-900, 9%)};
+      --#{$prefix}btn-border-color: #{darken($gray-900, 9%)};
+      --#{$prefix}btn-hover-bg: #{darken($gray-800, 1%)};
+      --#{$prefix}btn-active-bg: #{darken($gray-800, 1%)};
+      --#{$prefix}btn-hover-border-color: #{darken($gray-800, 1%)};
+      --#{$prefix}btn-active-border-color: #{darken($gray-800, 1%)};
+    }
+
+   header.header-sticky-on {
+    border-bottom: $border-width solid var(--#{$prefix}border-color);
+   }
+    
+    // Alert
+    @each $color, $value in $theme-colors {
+      .alert-#{$color} {
+        --#{$prefix}alert-bg: rgba(#{to-rgb($value)}, .05);
+        --#{$prefix}alert-border-color: rgba(#{to-rgb($value)}, .25);
+        --#{$prefix}alert-color: rgba(#{to-rgb($value)}, 0.8);
+      }
+    }
+
+    .alert-dark {
+      --#{$prefix}alert-color: var(--#{$prefix}gray-700);
+      --#{$prefix}alert-border-color: var( --#{$prefix}border-color);
+    }
+    
+    .alert-light{
+      --#{$prefix}alert-bg: var(--#{$prefix}light);
+      --#{$prefix}alert-color: var(--#{$prefix}body-color);
+      --#{$prefix}alert-link-color: #{$white};
+      --#{$prefix}alert-border-color: var( --#{$prefix}gray-200);
+    }
+    .alert-secondary{
+      --#{$prefix}alert-bg: rgba(var(--#{$prefix}secondary-rgb), 0.2);
+      --#{$prefix}alert-color: var(--#{$prefix}body-color);
+      --#{$prefix}alert-link-color: #{$white};
+      --#{$prefix}alert-border-color: var( --#{$prefix}border-color);
+    }
+
+    .btn-outline-dark{
+      --bs-btn-color: var(--#{$prefix}gray-300);
+      --bs-btn-border-color: var(--#{$prefix}gray-300);
+    }
+
+    .form-control{
+      background-color: var(--#{$prefix}mode);
+    }
+    .form-control:focus{
+      background-color: var(--#{$prefix}mode);
+    }
+
+    // Input group text border
+    .input-group {
+      .input-group-text {
+        &:first-of-type:not(:last-child) {
+          border-right-color: transparent;
+        }
+        &:last-of-type:not(:first-child) {
+          border-left-color: transparent;
+        }
+      }
+    }
+
+    // Accordion flush white
+    .accordion-flush-white{
+      .accordion-button{
+        background-color: var(--#{$prefix}mode);
+        &:not(.collapsed) {
+          color: var(--#{$prefix}--bs-gray-900);
+        }
+      }
+      .accordion-body {
+        background-color: var(--#{$prefix}mode);
+      }
+    }
+
+    // Accordion border
+    .accordion.accordion-border {
+      .accordion-button {
+        background-color: var(--#{$prefix}mode) !important;
+        &[aria-expanded=true]{
+          color: var(--#{$prefix}gray-100);
+          background-color: var(--#{$prefix}gray-900) !important;
+        }
+        &[aria-expanded=true]:before {
+          background: var(--#{$prefix}gray-100) !important;
+        }
+        &[aria-expanded=true]:after {
+          background: var(--#{$prefix}gray-100) !important;
+        }
+      }
+    }
+
+    .bg-light{
+      background-color: var(--#{$prefix}light) !important;
+    }
+    .text-bg-light{
+      background-color: var(--#{$prefix}light) !important;
+      color: var(--#{$prefix}--bs-gray-900) !important;
+    }
+    .border-light{
+      border-color: var(--#{$prefix}light) !important
+    }
+    .bg-body{
+      background-color: var(--#{$prefix}body-bg) !important;
+    }
+    .shadow, .shadow-lg, .shadow-sm{
+      box-shadow: none !important;
+    }
+    .navbar-nav .dropdown .dropdown-submenu:hover>.dropdown-menu {
+      box-shadow: none;
+    }
+    .btn-close {
+      filter: invert(1) grayscale(100%) brightness(300%);
+    }
+    .form-check-input:checked {
+      background-color: var(--#{$prefix}primary);
+      border-color: var(--#{$prefix}primary);
+    }
+
+    .text-primary-hover {
+      a {
+        color: var(--#{$prefix}gray-600);
+      }
+    }
+    
+    .text-primary-hover {
+      li {
+      color: var(--#{$prefix}gray-600) !important;
+    }
+  }
+
+
+  // Sidebar
+  .nav.nav-link-sidebar .nav-item .nav-link .nav-icon {
+    background: var(--#{$prefix}mode);
+    color: $white;
+  }
+  .nav.nav-link-sidebar .nav-item .nav-link.active  .nav-icon{
+    background: var(--#{$prefix}white);
+    color: var(--#{$prefix}mode);
+  }
+  .nav.nav-link-sidebar .nav-item .nav-link:hover  .nav-icon{
+    background: var(--#{$prefix}white);
+    color: var(--#{$prefix}mode) !important;
+  }
+  .nav-link-sidebar .nav-item .nav-link{
+    &:hover,&.active{
+      background-color: var(--#{$prefix}mode);
+    }
+  }
+  .nav-link-sidebar > .nav-item > .nav-link[data-bs-toggle=collapse][aria-expanded=true] .nav-icon {
+    background: var(--#{$prefix}white);
+    color: var(--#{$prefix}mode) !important;
+  }
+
+  // Sidebar bg light
+  .nav-sidebar-bg-light .nav-item .nav-link{
+    &.active, &:hover{
+      background-color: var(--#{$prefix}body-bg);
+    }
+  }
+
+  .nav-sidebar-bg-light .nav-item .nav-link[data-bs-toggle=collapse][aria-expanded=true] {
+    background: var(--#{$prefix}body-bg) !important;
+  }
+  .nav-link-sidebar > .nav-item > .nav-link[data-bs-toggle=collapse][aria-expanded=true] {
+    background-color: var(--#{$prefix}mode);
+  }
+
+  // Navbar collapse background color
+  .navbar-expand {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+      $next: breakpoint-next($breakpoint, $grid-breakpoints);
+      $infix: breakpoint-infix($next, $grid-breakpoints);
+      
+      // Styling for navbar-expand
+      &#{$infix} {
+
+        @include media-breakpoint-down($next) {
+          .navbar-collapse {
+            background: var(--#{$prefix}mode);
+          }
+        }
+
+      }
+    }
+  }
+
+  // Choices background
+  .choices{
+    .choices__inner{
+      background-color: var(--bs-mode);
+    }
+    .choices__list--dropdown{
+      background-color: var(--bs-mode);
+    }
+  }
+}
+
+// Dark mode item hide and show
+.dark-mode-item{
+  display: none !important;
+}
+
+[data-bs-theme="dark"]{
+  .dark-mode-item{
+    display: inline-block !important;
+  }
+  .light-mode-item{
+    display: none !important;
+  }
+}
