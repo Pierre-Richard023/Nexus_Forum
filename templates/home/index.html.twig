@@ -7,6 +7,74 @@
 {% block body %}
 
 
+	{% include "home/_hero.html.twig" %}
+
+	<section class="pt-0">
+		<div class="container">
+			<div class="row">
+
+				{% include "home/_left-sidebar.html.twig" %}
+				<div class="col-xl-8 col-xxl-7">
+					<div
+						class="vstack gap-4">
+
+						<div class="card hstack gap-0 align-items-start p-0">
+							<div class="user-vote w-70px p-3 p-sm-4">
+								<div class="btn-group vstack align-items-center" role="group">
+									<input type="radio" class="btn-check" name="vote1" id="btnradioT1">
+									<label class="btn btn-vote mb-0" for="btnradioT1">
+										<i class="bi bi-caret-up-fill fs-5"></i>
+									</label>
+
+									<h6 class="mb-0 px-2 vote-count">25</h6>
+
+									<input type="radio" class="btn-check" name="vote1" id="btnradioT2">
+									<label class="btn btn-vote mb-0" for="btnradioT2">
+										<i class="bi bi-caret-down-fill fs-5"></i>
+									</label>
+								</div>
+							</div>
+							<div class="vr"></div>
+							<div class="card-body p-3 p-sm-4">
+
+								<h5 class="card-title mb-2 mb-sm-1">
+									<a href="{{path("home") }}">Pourquoi Jinx est une REINE</a>
+								</h5>
+
+								<div class="hstack gap-2 gap-sm-3 flex-wrap">
+									<a href="{{path("home") }}" class="mb-0">Jinx Power</a>
+									<small>09 Fév 2026</small>
+								</div>
+
+								<div class="hstack gap-3 gap-sm-3 mt-3 flex-wrap">
+									<a href="{{path("home") }}" class="text-primary-hover small mb-0">
+										<i class="fa-regular fa-message me-1"></i>15
+										<span class="d-none d-sm-inline">commentaires</span>
+									</a>
+									<a href="{{path("home") }}" class="text-primary-hover small mb-0">
+										<i class="fa-regular fa-eye me-1"></i>102
+										<span class="d-none d-sm-inline">vues</span>
+									</a>
+									<a href="#!" class="text-primary-hover small mb-0 ms-auto" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Partager">
+										<i class="bi bi-share me-1"></i>
+									</a>
+									<a href="#!" class="text-primary-hover small mb-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="enregistrer">
+										<i class="fa-regular fa-bookmark me-1"></i>
+									</a>
+									<a href="#!" class="text-primary-hover small mb-0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Report">
+										<i class="fa-regular fa-flag me-1"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn-primary-soft mb-0">Charger plus de sujets</a>
+					</div>
+				</div>
+				{% include "home/_right-sidebar.html.twig" %}
+			</div>
+		</div>
+	</section>
 
 
 {% endblock %}
