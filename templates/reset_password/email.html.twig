@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <body>
+    <div
+      style='background-color:#F2F5F7;color:#242424;font-family:"Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif;font-size:16px;font-weight:400;letter-spacing:0.15008px;line-height:1.5;margin:0;padding:32px 0;min-height:100%;width:100%'
+    >
+      <table
+        align="center"
+        width="100%"
+        style="margin:0 auto;max-width:600px;background-color:#FFFFFF"
+        role="presentation"
+        cellspacing="0"
+        cellpadding="0"
+        border="0"
+      >
+        <tbody>
+          <tr style="width:100%">
+            <td>
+              <div style="padding:24px 24px 8px 24px;text-align:center">
+                <img
+                  alt=""
+                  src="{{ asset('assets/images/logo.png') }}"
+                  height="24"
+                  style="height:24px;outline:none;border:none;text-decoration:none;vertical-align:middle;display:inline-block;max-width:100%"
+                />
+              </div>
+              <h3
+                style="font-weight:bold;text-align:center;margin:0;font-size:20px;padding:32px 24px 0px 24px"
+              >
+                Réinitialiser votre mot de passe ?
+              </h3>
+              <div style="font-weight:normal;padding:16px 24px 16px 24px">
+                Pour réinitialiser votre mot de passe, veuillez cliquer sur le
+                lien suivant :
+              </div>
+              <div style="text-align:center;padding:12px 24px 32px 24px">
+                <a
+                  href="{{ url('app_reset_password', {token: resetToken.token}) }}"
+                  style="color:#FFFFFF;font-size:14px;font-weight:bold;background-color:#0068FF;display:inline-block;padding:12px 20px;text-decoration:none"
+                  target="_blank"
+                  ><span
+                    ><!--[if mso
+                      ]><i
+                        style="letter-spacing: 20px;mso-font-width:-100%;mso-text-raise:30"
+                        hidden
+                        >&nbsp;</i
+                      ><!
+                    [endif]--></span
+                  ><span>Changer mon mot de passe</span
+                  ><span
+                    ><!--[if mso
+                      ]><i
+                        style="letter-spacing: 20px;mso-font-width:-100%"
+                        hidden
+                        >&nbsp;</i
+                      ><!
+                    [endif]--></span
+                  ></a
+                >
+              </div>
+              <div style="font-weight:normal;padding:16px 24px 16px 24px">
+                Ce lien expirera dans {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.
+              </div>
+              <div
+                style="color:#474849;font-size:14px;font-weight:normal;text-align:left;padding:8px 24px 16px 24px"
+              >
+                Si vous n&#x27;avez pas demandé de réinitialisation, ne vous
+                inquiétez pas. Vous pouvez ignorer ce courriel sans problème.
+              </div>
+              <div style="padding:16px 24px 16px 24px">
+                <hr
+                  style="width:100%;border:none;border-top:1px solid #EEEEEE;margin:0"
+                />
+              </div>
+              <div
+                style="color:#474849;font-size:12px;font-weight:normal;text-align:left;padding:4px 24px 24px 24px"
+              >
+                Besoin d&#x27;aide ? Répondez simplement à ce courriel pour
+                contacter l&#x27;assistance.
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -73,7 +73,7 @@
 
 				{% if app.user === null %}
 					<li class="nav-item ms-2 d-none d-sm-block">
-						<a href="signin.php" class="btn btn-sm btn-primary mb-0">Se connecter</a>
+						<a href="{{ path("login")}}" class="btn btn-sm btn-primary mb-0">Se connecter</a>
 					</li>
 				{% else %}
 					<li class="nav-item ms-2 d-none d-sm-block">
