@@ -1,0 +1,131 @@
+<div class="tab-pane show active fade" id="nav-setting-tab-1">
+	<div class="card mb-4 p-0">
+		<div class="card-header border-bottom p-4">
+			<h1 class="h4 mb-1 card-title">Paramètres du compte</h1>
+		</div>
+		{% for message in app.flashes('delete_account_error') %}
+			<div class="alert alert-danger">
+				{{ message }}
+			</div>
+		{% endfor %}
+
+		<div class="card-body p-4">
+
+			{{ form_start(profileForm ,{'attr': {'class': 'row g-3'}}) }}
+
+			<div class="col-12">
+				<h6 class="form-label">Photo de profil</h6>
+				<div class="d-flex align-items-center">
+					<div class="avatar-uploader me-3">
+						<div class="avatar-edit">
+							{{ form_widget(profileForm.imageFile) }}
+							<label for="{{ profileForm.imageFile.file.vars.id }}"></label>
+						</div>
+						<div class="avatar avatar-xl position-relative">
+							{% if app.user.imageName %}
+								<img id="avatar-preview" class="avatar-img rounded-circle border border-white border-3 shadow" src="{{ vich_uploader_asset(app.user) }}" alt="">
+							{% else %}
+								<img id="avatar-preview" class="avatar-img rounded-circle border border-white border-3 shadow" src="{{ asset('images/elements/simle.svg') }}" alt="">
+							{% endif %}
+
+						</div>
+					</div>
+					<div class="avatar-remove">
+						<button type="button" id="avatar-reset-img" class="btn btn-danger-soft">Supprimer</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<label class="form-label">Surnom</label>
+				<input type="text" class="form-control" placeholder="" value="{{ app.user.username }}" disabled>
+			</div>
+
+			<div class="col-sm-6">
+				<label class="form-label">Email</label>
+				<input type="text" class="form-control" placeholder="" value="{{ app.user.email }}" disabled>
+			</div>
+
+			<div class="col-sm-6">
+				{{ form_label(profileForm.positions) }}
+				{{ form_widget(profileForm.positions) }}
+			</div>
+			<div class="col-sm-6">
+				{{ form_label(profileForm.ranks) }}
+				{{ form_widget(profileForm.ranks) }}
+			</div>
+
+			<div class="col-sm-12">
+				{{ form_label(profileForm.about_me) }}
+				{{ form_widget(profileForm.about_me) }}
+			</div>
+
+			<div class="col-12 text-end">
+				<button type="submit" class="btn btn-sm btn-primary mb-0">Sauvegarder les modifications</button>
+			</div>
+			{{ form_end(profileForm) }}
+
+		</div>
+	</div>
+
+	<div class="card mb-4 p-0">
+		<div class="card-header border-bottom p-4">
+			<h4 class="card-title mb-1">Modifier votre mot de passe</h4>
+		</div>
+
+
+		{% for message in app.flashes('modify_password_success') %}
+			<div class="alert alert-success">
+				{{ message }}
+			</div>
+		{% endfor %}
+
+
+		<div class="card-body p-4">
+			<div class="row g-4">
+				<div class="col-xl-8 order-2 order-xl-1">
+
+					{{ form_start(changePasswordForm ,{'attr': {'class': 'row g-3'}}) }}
+					<div class="col-12">
+						{{ form_label(changePasswordForm.currentPassword) }}
+						{{ form_widget(changePasswordForm.currentPassword) }}
+						<div id="validationServer03Feedback" class="invalid-feedback">
+							{{ form_errors(changePasswordForm.currentPassword) }}
+						</div>
+					</div>
+					<div class="col-12">
+						{{ form_label(changePasswordForm.newPassword.first) }}
+						{{ form_widget(changePasswordForm.newPassword.first ) }}
+						<div id="validationServer03Feedback" class="invalid-feedback">
+							{{ form_errors(changePasswordForm.newPassword.first) }}
+						</div>
+					</div>
+					<div class="col-12">
+						{{ form_label(changePasswordForm.newPassword.second) }}
+						{{ form_widget(changePasswordForm.newPassword.second ) }}
+					</div>
+
+					<div class="col-12 text-end">
+						<button type="submit" class="btn btn-primary mb-0">Mettre à jour le mot de passe</button>
+					</div>
+
+					{{ form_end(changePasswordForm) }}
+				</div>
+
+				<div class="col-xl-4 order-1">
+					<div class="bg-light border border-secondary p-4 rounded">
+						<h6>Règles relatives aux mots de passe</h6>
+						<small>Pour créer un nouveau mot de passe, vous devez respecter toutes les exigences suivantes</small>
+						<ul class="mb-0 ms-n2 small">
+							<li>Minimum 8 caractères</li>
+							<li>Au moins un caractère spécial
+							</li>
+							<li>Au moins un nombre</li>
+							<li>Impossible de réutiliser un ancien</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

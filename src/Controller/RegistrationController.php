@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Users;
+use App\Entity\UserSettings;
 use App\Form\RegistrationFormType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -27,10 +28,24 @@ class RegistrationController extends AbstractController
             // encode the plain password
             $user->setPassword($userPasswordHasher->hashPassword($user, $plainPassword));
 
+            $userSettings = new UserSettings();
+            $userSettings->setUser($user)
+                ->setTheme('light')
+                ->setComments(true)
+                ->setMentions(true)
+                ->setMessages(true)
+                ->setModeration(true)
+                ->setReplies(true)
+                ->setUpvotes(true)
+                ->setTopicAsk(true)
+                ->setTopicAnswers(true)
+                ->setShares(true)
+            ;
+
             $entityManager->persist($user);
+            $entityManager->persist($userSettings);
             $entityManager->flush();
 
-            // do anything else you need here, like send an email
 
             return $this->redirectToRoute('home');
         }

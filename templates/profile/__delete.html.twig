@@ -1,0 +1,58 @@
+<div class="tab-pane fade" id="nav-setting-tab-3">
+	<div class="card p-0">
+		<div class="card-header border-bottom p-4">
+			<h4 class="card-title mb-0">Supprimer le compte</h4>
+		</div>
+		<div class="card-body p-4">
+			<p>
+				Avant de confirmer votre demande de suppression de profil, nous aimerions prendre un moment pour vous expliquer les conséquences de cette suppression :
+			</p>
+			<ul>
+				<li>
+					La suppression est définitive. La personne concernée reconnaît avoir pris connaissance de cette information et n’est pas affectée par d’éventuelles modifications ultérieures.
+				</li>
+				<li>La suppression de votre compte entraînera la perte définitive de l’ensemble de vos données.</li>
+			</ul>
+
+			<p>
+				En confirmant votre demande de suppression de profil, vous acceptez que votre compte et toutes les données associées soient définitivement supprimés de notre système. Nous vous remercions d’avoir été membre de notre communauté et nous sommes désolés de vous voir partir.
+			</p>
+
+			<button type="button" class="btn btn-danger btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#deleteAccountModal">
+				Supprimer mon compte
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="deleteAccountModalLabel">Supprimer mon compte</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form method="post" action="{{ path('profile_delete') }}">
+								<input type="hidden" name="_token" value="{{ csrf_token('delete-user') }}">
+								<div class="form-check form-check-md my-2">
+									<label class="form-label" for="confirmDeleteInput">
+										Mot de passe
+										<span class="text-danger">*</span>
+										:
+									</label>
+									<input type="password" class="form-control" id="confirmDeleteInput" name="plainpassword" autocomplete="current-password" required>
+								</div>
+
+								<div class="d-grid gap-2 col-6 mx-auto">
+									<button type="submit" class="btn btn-danger btn-sm mb-0" id="confirmDeleteButton" >Supprimer mon compte</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	- Profile
+{% endblock %}
+
+{% block body %}
+
+	<section class="pt-8">
+		<div class="container">
+
+			<div class="d-flex align-items-center mb-4 d-lg-none">
+				<button class="btn btn-primary mb-0 d-xxl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<i class="fas fa-sliders-h me-1"></i>
+					Paramètres du compte
+				</button>
+			</div>
+
+			<div class="row">
+
+				{% include "profile/__sidebar.html.twig" %}
+				<div class="col-lg-8 col-xl-9">
+					<div class="tab-content py-0 mb-0">
+						{% include "profile/__account.html.twig" %}
+						{% include "profile/__settings.html.twig" %}
+						{% include "profile/__delete.html.twig" %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

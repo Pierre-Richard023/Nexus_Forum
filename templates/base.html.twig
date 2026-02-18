@@ -33,7 +33,7 @@
 			{{ encore_entry_script_tags('app') }}
 		{% endblock %}
 	</head>
-	<body>
+	<body data-user-theme="{{ app.user ? app.user.userSettings.theme : '' }}">
 
 		{% include "_header.html.twig" %}
 

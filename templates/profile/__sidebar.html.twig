@@ -1,0 +1,40 @@
+<div class="col-lg-4 col-xl-3">
+	<nav class="navbar navbar-light navbar-expand-lg mx-0">
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Paramètres du compte</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body p-0">
+				<div class="card card-body">
+					<ul class="nav nav-tabs nav-pills nav-pills-primary-soft flex-column gap-2 border-0">
+						<li class="nav-item">
+							<a class="nav-link mb-0 active" href="#nav-setting-tab-1" data-bs-toggle="tab">Compte</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link mb-0" href="#nav-setting-tab-2" data-bs-toggle="tab">Paramètres</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link mb-0" href="#nav-setting-tab-3" data-bs-toggle="tab">Supprimer le compte</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="nav justify-content-center mt-4">
+				<li class="nav-item">
+					<a class="nav-link small" href="{{ path("home") }}">À propos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link small" href="{{ path("home") }}">Ticket</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link small" href="{{ path("home") }}">Centre d'aide</a>
+				</li>
+			</ul>
+			<div class="text-primary-hover text-center small mt-2">
+				Copyrights
+				<a href="{{ path("home") }}" class="text-body">©2026 Nexus Forum</a>.
+			</div>
+		</div>
+	</nav>
+</div>
