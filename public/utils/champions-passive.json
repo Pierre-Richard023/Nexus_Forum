@@ -1,0 +1,1378 @@
+[
+  {
+    "champion-id": "Aatrox",
+    "passive": {
+      "name": "Posture du massacreur",
+      "description": "Régulièrement, la prochaine attaque de base d'Aatrox inflige des <magicDamage>dégâts magiques</magicDamage> bonus et le soigne, selon un pourcentage des PV max de la cible. ",
+      "image": "Aatrox_P.png"
+    }
+  },
+  {
+    "champion-id": "Ahri",
+    "passive": {
+      "name": "Vol essentiel",
+      "description": "Après avoir tué 9 sbires ou monstres, Ahri récupère des PV.<br>Après avoir participé à l'élimination d'un champion ennemi, Ahri récupère encore plus de PV.",
+      "image": "Ahri_P.png"
+    }
+  },
+  {
+    "champion-id": "Akali",
+    "passive": {
+      "name": "Marque d'assassin",
+      "description": "Blesser un champion avec une compétence crée un cercle d'énergie autour de lui. Quitter ce cercle renforce la prochaine attaque d'Akali en augmentant sa portée et ses dégâts.",
+      "image": "Akali_P.png"
+    }
+  },
+  {
+    "champion-id": "Akshan",
+    "passive": {
+      "name": "Fourberie",
+      "description": "Tous les trois coups venant de ses attaques ou de ses compétences, Akshan inflige des dégâts supplémentaires. Il gagne aussi un bouclier si la cible est un champion.<br><br>Quand Akshan attaque, il effectue une attaque supplémentaire qui inflige moins de dégâts. S'il annule l'attaque supplémentaire, il gagne à la place de la vitesse de déplacement.",
+      "image": "Akshan_P.png"
+    }
+  },
+  {
+    "champion-id": "Alistar",
+    "passive": {
+      "name": "Cri triomphant",
+      "description": "Alistar charge son cri en étourdissant ou en déplaçant des champions ennemis ou quand des ennemis proches meurent. Quand le cri est pleinement chargé, Alistar se soigne et soigne tous les champions alliés proches.",
+      "image": "Alistar_P.png"
+    }
+  },
+  {
+    "champion-id": "Ambessa",
+    "passive": {
+      "name": "Ruée des chiens-dragons",
+      "description": "Déclencher un déplacement ou une attaque lorsqu'elle lance une compétence permet à Ambessa de se ruer sur une courte distance une fois la compétence lancée. Cela octroie à sa prochaine attaque de la portée bonus, des dégâts bonus, de la vitesse d'attaque bonus, et lui rend de l'énergie.",
+      "image": "Ambessa_P.png"
+    }
+  },
+  {
+    "champion-id": "Amumu",
+    "passive": {
+      "name": "Toucher maudit",
+      "description": "Les attaques de base d'Amumu <font color='#9b0f5f'>maudissent</font> ses ennemis, leur faisant subir des dégâts bruts supplémentaires chaque fois qu'ils subissent des dégâts magiques.",
+      "image": "Amumu_P.png"
+    }
+  },
+  {
+    "champion-id": "Anivia",
+    "passive": {
+      "name": "Renaissance",
+      "description": "Quand elle subit des dégâts mortels, Anivia se transforme en œuf et revient à la vie avec tous ses PV.",
+      "image": "Anivia_P.png"
+    }
+  },
+  {
+    "champion-id": "Annie",
+    "passive": {
+      "name": "Pyromanie",
+      "description": "Après qu'Annie a utilisé 4 compétences, sa prochaine compétence offensive étourdit sa cible.<br><br>Annie commence la partie et réapparaît avec Pyromanie disponible.",
+      "image": "Annie_P.png"
+    }
+  },
+  {
+    "champion-id": "Aphelios",
+    "passive": {
+      "name": "Le Tueur et l'Oracle",
+      "description": "Aphelios manie 5 armes de Lunari forgées par sa sœur Alune. Il peut en porter deux à la fois : une principale et une secondaire. Chaque arme possède une attaque de base et une compétence uniques. Les attaques et les compétences consomment les munitions de son arme. Lorsqu'il n'a plus de munitions, Aphelios jette son arme et Alune invoque la suivante (parmi les 5). ",
+      "image": "Aphelios_P.png"
+    }
+  },
+  {
+    "champion-id": "Ashe",
+    "passive": {
+      "name": "Tir givrant",
+      "description": "Les attaques d'Ashe ralentissent ses cibles et infligent des dégâts supplémentaires aux cibles affectées.<br><br>Les coups critiques d'Ashe n'infligent pas de dégâts supplémentaires, mais ils appliquent un ralentissement renforcé.",
+      "image": "Ashe_P.png"
+    }
+  },
+  {
+    "champion-id": "AurelionSol",
+    "passive": {
+      "name": "Créateur cosmique",
+      "description": "Les compétences d'Aurelion Sol qui blessent des ennemis lui octroient de la <font color='#3458eb'>poussière d'étoile</font>, laquelle améliore définitivement chacune de ses compétences. ",
+      "image": "AurelionSol_P.png"
+    }
+  },
+  {
+    "champion-id": "Aurora",
+    "passive": {
+      "name": "Abjuration spirituelle",
+      "description": "Aurora exorcise les esprits des ennemis qu'elle blesse avec ses compétences et ses attaques. Les esprits exorcisés la suivent et la soignent.",
+      "image": "Aurora_P.png"
+    }
+  },
+  {
+    "champion-id": "Azir",
+    "passive": {
+      "name": "Héritage de Shurima",
+      "description": "Azir peut invoquer le Disque solaire depuis les ruines des tourelles ennemies ou alliées.",
+      "image": "Azir_P.png"
+    }
+  },
+  {
+    "champion-id": "Bard",
+    "passive": {
+      "name": "Instinct du voyageur",
+      "description": "<font color='#FF9900'>Meeps :</font> Bard attire des esprits inférieurs qui soutiennent ses attaques de base en infligeant des dégâts magiques supplémentaires. Quand Bard a collecté suffisamment de <font color='#cccc00'>carillons</font>, ses Meeps infligeront en plus des dégâts dans une zone et ralentiront les ennemis touchés.<br><br><font color='#FF9900'>Carillons :</font> d'antiques <font color='#cccc00'>carillons</font> que peut collecter Bard apparaissent aléatoirement. Ils lui font gagner de l'expérience, lui rendent du mana et lui octroient un bonus en vitesse de déplacement en dehors des combats.",
+      "image": "Bard_P.png"
+    }
+  },
+  {
+    "champion-id": "Belveth",
+    "passive": {
+      "name": "Mer de lavande ",
+      "description": "Bel'Veth gagne définitivement des bonus cumulables en vitesse d'attaque après avoir tué des grands monstres, des grands sbires et des champions. Elle gagne aussi un bonus temporaire en vitesse d'attaque après avoir utilisé une compétence.",
+      "image": "Belveth_P.png"
+    }
+  },
+  {
+    "champion-id": "Blitzcrank",
+    "passive": {
+      "name": "Barrière de mana",
+      "description": "Lorsqu'il lui reste peu de PV, Blitzcrank obtient un bouclier dont les PV dépendent de son mana.",
+      "image": "Blitzcrank_P.png"
+    }
+  },
+  {
+    "champion-id": "Brand",
+    "passive": {
+      "name": "Flammes",
+      "description": "Les compétences de Brand enflamment ses cibles, leur infligeant des dégâts en 4 sec (cumulable 3 fois). Si Brand tue un ennemi en flammes, il récupère du mana. Quand Flammes atteint son maximum d'effets cumulés sur un champion ou un grand monstre, Flammes devient instable et explose au bout de 2 sec, infligeant les effets de sort et d'énormes dégâts autour de la victime.",
+      "image": "Brand_P.png"
+    }
+  },
+  {
+    "champion-id": "Braum",
+    "passive": {
+      "name": "Coups étourdissants",
+      "description": "Les attaques de base de Braum appliquent Coups étourdissants. Une fois le premier effet appliqué, les attaques de base des <font color='#FFF673'>alliés</font> appliquent aussi l'effet Coups étourdissants. <br><br>À 4 effets cumulés, la cible est étourdie et elle subit des dégâts magiques. Pendant quelques secondes, la cible ne peut plus recevoir cet effet mais les attaques de Braum lui infligent des dégâts magiques supplémentaires.",
+      "image": "Braum_P.png"
+    }
+  },
+  {
+    "champion-id": "Briar",
+    "passive": {
+      "name": "Malédiction écarlate",
+      "description": "Les attaques et compétences de Briar infligent un saignement cumulable qui la soigne d'une partie des dégâts qu'il inflige. Du fait de sa faim permanente, Briar manque de régénération naturelle des PV, mais moins elle a de PV, plus ses soins sont renforcés.",
+      "image": "Briar_P.png"
+    }
+  },
+  {
+    "champion-id": "Caitlyn",
+    "passive": {
+      "name": "Tir dans la tête",
+      "description": "Toutes les quelques attaques de base ou quand elle vise une cible prise dans un de ses pièges ou dans son filet, Caitlyn tire dans la tête de sa cible, infligeant des dégâts supplémentaires qui augmentent avec ses chances de coup critique. Contre les cibles prises au piège ou dans un filet, la portée du Tir dans la tête est doublée.",
+      "image": "Caitlyn_P.png"
+    }
+  },
+  {
+    "champion-id": "Camille",
+    "passive": {
+      "name": "Protection modulable",
+      "description": "Les attaques de base contre les champions octroient à Camille un bouclier équivalent à un pourcentage de ses PV max contre le type de dégâts de l'ennemi (physique ou magique) pendant un court moment.",
+      "image": "Camille_P.png"
+    }
+  },
+  {
+    "champion-id": "Cassiopeia",
+    "passive": {
+      "name": "Grâce serpentine",
+      "description": "Tous les bonus en vitesse de déplacement sont plus efficaces sur Cassiopeia.",
+      "image": "Cassiopeia_P.png"
+    }
+  },
+  {
+    "champion-id": "Chogath",
+    "passive": {
+      "name": "Carnivore",
+      "description": "Lorsque Cho'Gath élimine une unité, il regagne des PV et du mana. Le nombre de PV et points de mana restaurés augmente avec le niveau de Cho'Gath.",
+      "image": "Chogath_P.png"
+    }
+  },
+  {
+    "champion-id": "Corki",
+    "passive": {
+      "name": "Munitions Hextech",
+      "description": "Corki inflige des <trueDamage>dégâts bruts</trueDamage> bonus équivalents à un pourcentage des dégâts de ses attaques de base.",
+      "image": "Corki_P.png"
+    }
+  },
+  {
+    "champion-id": "Darius",
+    "passive": {
+      "name": "Plaie béante",
+      "description": "Les attaques de Darius et ses compétences infligeant des dégâts font saigner les ennemis, ce qui leur inflige des dégâts physiques en 5 sec (cumulable 5 fois). Darius enrage et gagne un énorme bonus en dégâts d'attaque quand sa cible atteint le nombre max d'effets cumulés.",
+      "image": "Darius_P.png"
+    }
+  },
+  {
+    "champion-id": "Diana",
+    "passive": {
+      "name": "Lame sélène",
+      "description": "Tous les trois coups, Diana frappe les ennemis proches et leur inflige des dégâts magiques bonus. Après avoir lancé une compétence, Diana augmente sa vitesse d'attaque pendant 5 sec.",
+      "image": "Diana_P.png"
+    }
+  },
+  {
+    "champion-id": "DrMundo",
+    "passive": {
+      "name": "Il va où il veut",
+      "description": "Dr. Mundo résiste au premier effet immobilisant qui l'affecte. En revanche, il perd des PV et laisse tomber une bonbonne chimique. Dr. Mundo peut la ramasser en marchant dessus, ce qui lui rend des PV et réduit le délai de récupération de cette compétence.<br><br>Dr. Mundo dispose aussi d'une régénération de PV considérablement accrue.<br>",
+      "image": "DrMundo_P.png"
+    }
+  },
+  {
+    "champion-id": "Draven",
+    "passive": {
+      "name": "League of Draven",
+      "description": "Draven obtient l'Adoration de ses fans quand il rattrape une Hache tournoyante, quand il tue un sbire ou un monstre et quand il détruit une tourelle. Quand il tue des champions ennemis, Draven gagne des PO supplémentaires en fonction de l'Adoration cumulée.",
+      "image": "Draven_P.png"
+    }
+  },
+  {
+    "champion-id": "Ekko",
+    "passive": {
+      "name": "RéZonance",
+      "description": "Toutes les trois attaques ou compétences infligeant des dégâts sur une même cible, Ekko inflige des dégâts magiques supplémentaires. Si la cible est un champion, il gagne en plus un bref bonus en vitesse de déplacement.<br><br>",
+      "image": "Ekko_P.png"
+    }
+  },
+  {
+    "champion-id": "Elise",
+    "passive": {
+      "name": "Reine araignée",
+      "description": "Forme humaine : quand les compétences d'Elise touchent un ennemi, elle génère une araignée en sommeil.<br><br>Forme arachnéenne : les attaques de base infligent des dégâts magiques supplémentaires et rendent des PV à Elise.",
+      "image": "Elise_P.png"
+    }
+  },
+  {
+    "champion-id": "Evelynn",
+    "passive": {
+      "name": "Ombre démoniaque",
+      "description": "En dehors des combats, Evelynn se plonge dans une Ombre démoniaque. Ombre démoniaque soigne Evelynn quand ses PV sont bas et lui octroie un camouflage à partir du niveau 6.",
+      "image": "Evelynn_P.png"
+    }
+  },
+  {
+    "champion-id": "Ezreal",
+    "passive": {
+      "name": "Force grandissante",
+      "description": "Ezreal augmente sa vitesse d'attaque chaque fois qu'il touche un ennemi avec une compétence (cumulable jusqu'à 5 fois).",
+      "image": "Ezreal_P.png"
+    }
+  },
+  {
+    "champion-id": "Fiddlesticks",
+    "passive": {
+      "name": "Épouvantable épouvantail",
+      "description": "La relique de Fiddlesticks est remplacée par des Effigies d'épouvantail.",
+      "image": "Fiddlesticks_P.png"
+    }
+  },
+  {
+    "champion-id": "Fiora",
+    "passive": {
+      "name": "Danse de la duelliste",
+      "description": "Fiora a révélé un des <keywordMajor>points faibles</keywordMajor> de ce champion. Si elle frappe ce <keywordMajor>point faible</keywordMajor>, elle <healing>récupère des PV</healing> et gagne de la <speed>vitesse de déplacement</speed>.",
+      "image": "Fiora_P.png"
+    }
+  },
+  {
+    "champion-id": "Fizz",
+    "passive": {
+      "name": "Combattant agile",
+      "description": "Fizz peut traverser les unités et profite d'un montant fixe de réduction des dégâts contre toutes les sources de dégâts.",
+      "image": "Fizz_P.png"
+    }
+  },
+  {
+    "champion-id": "Galio",
+    "passive": {
+      "name": "Frappe colossale",
+      "description": "Toutes les quelques secondes, la prochaine attaque de base de Galio inflige des dégâts magiques supplémentaires dans une zone.",
+      "image": "Galio_P.png"
+    }
+  },
+  {
+    "champion-id": "Gangplank",
+    "passive": {
+      "name": "Épreuve du feu",
+      "description": "Toutes les quelques secondes, les attaques de base de Gangplank mettent le feu à sa cible.",
+      "image": "Gangplank_P.png"
+    }
+  },
+  {
+    "champion-id": "Garen",
+    "passive": {
+      "name": "Persévérance",
+      "description": "Si Garen n'a pas subi de dégâts ou de compétences ennemies récemment, il régénère un pourcentage de ses PV totaux chaque seconde.",
+      "image": "Garen_P.png"
+    }
+  },
+  {
+    "champion-id": "Gnar",
+    "passive": {
+      "name": "Rage génique",
+      "description": "Gnar génère de la Rage quand il combat. Une fois sa jauge de Rage remplie, sa prochaine compétence le transforme en Méga Gnar, ce qui améliore ses défenses et lui octroie de nouvelles compétences.",
+      "image": "Gnar_P.png"
+    }
+  },
+  {
+    "champion-id": "Gragas",
+    "passive": {
+      "name": "Tournée",
+      "description": "Gragas récupère des PV quand il utilise une compétence.",
+      "image": "Gragas_P.png"
+    }
+  },
+  {
+    "champion-id": "Graves",
+    "passive": {
+      "name": "Nouvelle destinée",
+      "description": "Le fusil de Graves dispose de propriétés uniques. Graves doit recharger quand il n'a plus de munitions. Chaque attaque tire 4 balles qui ne traversent pas les unités. Les unités touchées par plusieurs balles sont repoussées (sauf les champions).",
+      "image": "Graves_P.png"
+    }
+  },
+  {
+    "champion-id": "Gwen",
+    "passive": {
+      "name": "Mille coupures",
+      "description": "Les attaques de Gwen infligent des dégâts magiques supplémentaires selon les PV de la cible. Gwen récupère des PV équivalents à une partie des dégâts que cet effet inflige aux champions. ",
+      "image": "Gwen_P.png"
+    }
+  },
+  {
+    "champion-id": "Hecarim",
+    "passive": {
+      "name": "Galop",
+      "description": "Les dégâts d'attaque d'Hecarim augmentent d'un montant égal à un pourcentage de sa vitesse de déplacement bonus.",
+      "image": "Hecarim_P.png"
+    }
+  },
+  {
+    "champion-id": "Heimerdinger",
+    "passive": {
+      "name": "Affinité Hextech",
+      "description": "Gagne de la vitesse de déplacement à proximité des tourelles alliées et des tourelles déployées par Heimerdinger.",
+      "image": "Heimerdinger_P.png"
+    }
+  },
+  {
+    "champion-id": "Hwei",
+    "passive": {
+      "name": "Signature du Visionnaire",
+      "description": "Hwei prépare les champions ennemis qu'il blesse à l'aide de ses compétences pour sa touche finale : sa signature.<br><br>Toucher un ennemi avec une deuxième compétence blessante termine sa signature, qui apparaît sous l'ennemi. La signature explose après un court délai, infligeant des dégâts magiques à tous les ennemis à portée.",
+      "image": "Hwei_P.png"
+    }
+  },
+  {
+    "champion-id": "Illaoi",
+    "passive": {
+      "name": "Prophétesse d'un dieu ancestral",
+      "description": "Illaoi et les <font color='#669900'>réceptacles</font> qu'elle crée font apparaître des tentacules sur les éléments de décor infranchissables à proximité. Les tentacules frappent les esprits, les <font color='#669900'>réceptacles</font> et les victimes de l'Âpre leçon d'Illaoi. Les tentacules infligent des dégâts physiques aux ennemis touchés, et ils soignent Illaoi s'ils blessent un champion.",
+      "image": "Illaoi_P.png"
+    }
+  },
+  {
+    "champion-id": "Irelia",
+    "passive": {
+      "name": "Ferveur ionienne",
+      "description": "Quand Irelia frappe des ennemis avec ses compétences, elle gagne un bonus de vitesse d'attaque cumulable. Au maximum d'effets cumulés, elle gagne aussi des dégâts à l'impact supplémentaires.",
+      "image": "Irelia_P.png"
+    }
+  },
+  {
+    "champion-id": "Ivern",
+    "passive": {
+      "name": "Ami de la forêt",
+      "description": "Ivern ne peut pas attaquer ou être attaqué par les monstres non épiques. Ivern peut créer des bosquets magiques qui se développent progressivement sur les camps de monstres. Quand le bosquet est pleinement développé, Ivern peut libérer les monstres pour recevoir des PO et de l'expérience.",
+      "image": "Ivern_P.png"
+    }
+  },
+  {
+    "champion-id": "Janna",
+    "passive": {
+      "name": "Zéphyr",
+      "description": "Les alliés de Janna gagnent de la vitesse de déplacement quand ils se dirigent vers elle.<br><br>Les dégâts à l'impact de Janna et Alizé infligent des dégâts magiques supplémentaires équivalents à une partie de sa vitesse de déplacement bonus.",
+      "image": "Janna_P.png"
+    }
+  },
+  {
+    "champion-id": "JarvanIV",
+    "passive": {
+      "name": "Cadence martiale",
+      "description": "La première attaque de base de Jarvan IV sur un ennemi inflige des dégâts physiques supplémentaires selon un pourcentage des PV actuels de la cible. Cet effet ne peut ensuite plus être infligé au même ennemi pendant quelques secondes.",
+      "image": "JarvanIV_P.png"
+    }
+  },
+  {
+    "champion-id": "Jax",
+    "passive": {
+      "name": "Acharnement",
+      "description": "Les attaques de base successives de Jax augmentent continuellement sa vitesse d'attaque.",
+      "image": "Jax_P.png"
+    }
+  },
+  {
+    "champion-id": "Jayce",
+    "passive": {
+      "name": "Capaciteur Hextech",
+      "description": "Quand Jayce change d'arme, il gagne un bonus en vitesse de déplacement pendant un court instant.",
+      "image": "Jayce_P.png"
+    }
+  },
+  {
+    "champion-id": "Jhin",
+    "passive": {
+      "name": "Murmure",
+      "description": "Le pistolet de Jhin, Murmure, est un instrument de précision capable d'infliger de lourds dégâts. Sa cadence de tir est fixe et il ne peut tirer que quatre balles avant de devoir être rechargé. Jhin insuffle à la dernière balle un soupçon de magie noire qui lui permet de toujours infliger un coup critique et des dégâts supplémentaires. Quand Murmure inflige un coup critique, Jhin reçoit un bonus en vitesse de déplacement.",
+      "image": "Jhin_P.png"
+    }
+  },
+  {
+    "champion-id": "Jinx",
+    "passive": {
+      "name": "Enthousiasme !",
+      "description": "Jinx reçoit un énorme bonus en vitesse de déplacement et en vitesse d'attaque quand elle participe à l'élimination/destruction d'un champion, d'un monstre épique de la jungle ou d'un bâtiment.",
+      "image": "Jinx_P.png"
+    }
+  },
+  {
+    "champion-id": "KSante",
+    "passive": {
+      "name": "Instinct intrépide",
+      "description": "Les compétences de K'Santé marquent ses cibles pour que sa prochaine attaque leur inflige plus de dégâts.<br><br>Dans sa forme Grand jeu, les attaques et les compétences de K'Santé infligent plus de dégâts.",
+      "image": "KSante_P.png"
+    }
+  },
+  {
+    "champion-id": "Kaisa",
+    "passive": {
+      "name": "Seconde peau",
+      "description": "Les attaques de base de Kai'Sa appliquent des effets Plasma, infligeant de plus en plus de dégâts magiques supplémentaires. Les effets immobilisants des alliés appliquent aussi des effets Plasma. De plus, les objets achetés par Kai'Sa améliorent ses sorts de base en leur offrant des propriétés plus puissantes.",
+      "image": "Kaisa_P.png"
+    }
+  },
+  {
+    "champion-id": "Kalista",
+    "passive": {
+      "name": "Maintien martial",
+      "description": "Donnez un ordre de déplacement pendant l'animation de l'attaque de base ou de la Perforation de Kalista pour bondir sur une petite distance dans cette direction après avoir lancé l'attaque.",
+      "image": "Kalista_P.png"
+    }
+  },
+  {
+    "champion-id": "Karma",
+    "passive": {
+      "name": "Concentration ardente",
+      "description": "Les compétences de Karma qui infligent des dégâts réduisent le délai de récupération de Mantra.",
+      "image": "Karma_P.png"
+    }
+  },
+  {
+    "champion-id": "Karthus",
+    "passive": {
+      "name": "Déni de mort",
+      "description": "Lorsqu'il meurt, Karthus prend une forme spirituelle qui lui permet de continuer à lancer des sorts.",
+      "image": "Karthus_P.png"
+    }
+  },
+  {
+    "champion-id": "Kassadin",
+    "passive": {
+      "name": "Pierre du Néant",
+      "description": "Kassadin subit moins de dégâts magiques et peut traverser les unités.",
+      "image": "Kassadin_P.png"
+    }
+  },
+  {
+    "champion-id": "Katarina",
+    "passive": {
+      "name": "Voracité",
+      "description": "Les délais de récupération des compétences de Katarina sont grandement réduits quand un champion qu'elle a blessé récemment meurt.<br><br>Si Katarina ramasse une <font color='#FFF673'>dague</font>, elle s'en sert pour frapper tous les ennemis proches, infligeant des dégâts magiques.",
+      "image": "Katarina_P.png"
+    }
+  },
+  {
+    "champion-id": "Kayle",
+    "passive": {
+      "name": "Ascension divine",
+      "description": "Les attaques de Kayle sont renforcées par les cieux au fur et à mesure qu'elle gagne des niveaux et dépense des points de compétence. Ses ailes s'enflamment tandis qu'elle gagne progressivement de la vitesse d'attaque, de la vitesse de déplacement, de la portée d'attaque et des vagues de feu sur ses attaques.",
+      "image": "Kayle_P.png"
+    }
+  },
+  {
+    "champion-id": "Kayn",
+    "passive": {
+      "name": "Faux des Darkin",
+      "description": "Kayn manie une arme antique et combat Rhaast, le Darkin qu'elle renferme, pour en prendre le contrôle. Soit le <font color='#fe5c50'>Darkin</font> triomphera, soit Kayn maîtrisera Rhaast et deviendra l'<font color='#8484fb'>Assassin de l'ombre</font>.<br><br><font color='#fe5c50'>Darkin :</font> soin équivalent à un pourcentage des dégâts de compétence infligés aux champions.<br><br><font color='#8484fb'>Assassin de l'ombre :</font> inflige des dégâts supplémentaires pendant les premières secondes d'un combat contre des champions ennemis.",
+      "image": "Kayn_P.png"
+    }
+  },
+  {
+    "champion-id": "Kennen",
+    "passive": {
+      "name": "Marque de tempête",
+      "description": "Kennen étourdit les ennemis qu'il touche 3 fois avec ses compétences.",
+      "image": "Kennen_P.png"
+    }
+  },
+  {
+    "champion-id": "Khazix",
+    "passive": {
+      "name": "Menace invisible",
+      "description": "Les ennemis proches qui sont <font color='#FFF673'>isolés</font> sont marqués. Les compétences de Kha'Zix profitent d'interactions avec les cibles <font color='#FFF673'>isolées</font>.<br><br>Lorsque Kha'Zix n'est pas visible par l'équipe ennemie, il gagne Menace invisible, qui permet à sa prochaine attaque de base contre un champion ennemi d'infliger des dégâts magiques supplémentaires et de le ralentir pendant quelques secondes.",
+      "image": "Khazix_P.png"
+    }
+  },
+  {
+    "champion-id": "Kindred",
+    "passive": {
+      "name": "Marque de Kindred",
+      "description": "Kindred peut marquer des cibles à chasser. Chaque chasse fructueuse renforce définitivement les compétences de base de Kindred. Toutes les 4 chasses menées à bien, la portée des attaques de base de Kindred augmente également.",
+      "image": "Kindred_P.png"
+    }
+  },
+  {
+    "champion-id": "Kled",
+    "passive": {
+      "name": "Skaarl, le Lézard froussard",
+      "description": "Kled chevauche sa fidèle monture, Skaarl, qui subit les dégâts à sa place. Quand les PV de Skaarl tombent à zéro, Kled est désarçonné.<br><br>Sans monture, les compétences de Kled changent et il inflige moins de dégâts aux champions. Kled peut restaurer le courage de Skaarl en combattant des ennemis. Quand le courage atteint son maximum, Kled se remet en selle avec une partie des PV de Skaarl.",
+      "image": "Kled_P.png"
+    }
+  },
+  {
+    "champion-id": "KogMaw",
+    "passive": {
+      "name": "Surprise d'Icathia",
+      "description": "4 sec après sa mort, Kog'Maw explose, infligeant des dégâts bruts aux ennemis proches.",
+      "image": "KogMaw_P.png"
+    }
+  },
+  {
+    "champion-id": "Leblanc",
+    "passive": {
+      "name": "Image miroir",
+      "description": "Quand LeBlanc tombe à moins de 40% de ses PV max, elle devient invisible pendant 1 sec et crée une Image miroir qui n'inflige aucun dégât et dure jusqu'à 8 sec.",
+      "image": "Leblanc_P.png"
+    }
+  },
+  {
+    "champion-id": "LeeSin",
+    "passive": {
+      "name": "Rafale",
+      "description": "Après avoir utilisé une compétence, Lee Sin voit sa vitesse d'attaque augmenter pour ses 2 prochaines attaques de base. Ces attaques accélérées lui rendent de l'énergie.",
+      "image": "LeeSin_P.png"
+    }
+  },
+  {
+    "champion-id": "Leona",
+    "passive": {
+      "name": "Rayon de soleil",
+      "description": "Les sorts marquent les ennemis d'un Rayon de soleil pendant 1.5 sec. Si des champions alliés blessent ces ennemis, ils dissipent Rayon de soleil et infligent des dégâts magiques supplémentaires.",
+      "image": "Leona_P.png"
+    }
+  },
+  {
+    "champion-id": "Lillia",
+    "passive": {
+      "name": "Bâton chargé de rêves",
+      "description": "Toucher un champion ou un monstre avec une compétence lui inflige des dégâts supplémentaires sur la durée équivalents à un pourcentage de ses PV max.",
+      "image": "Lillia_P.png"
+    }
+  },
+  {
+    "champion-id": "Lissandra",
+    "passive": {
+      "name": "Emprise de la Sublimée",
+      "description": "Lorsqu'un champion ennemi meurt à proximité de Lissandra, il se transforme en Serviteur de glace. Les Serviteurs de glace ralentissent les ennemis proches et, après un délai, le froid les fait exploser, infligeant des dégâts magiques aux cibles proches.",
+      "image": "Lissandra_P.png"
+    }
+  },
+  {
+    "champion-id": "Lucian",
+    "passive": {
+      "name": "Pistolero",
+      "description": "Quand Lucian utilise une compétence, sa prochaine attaque devient un double-tir. Quand Lucian est soigné par un allié, quand il reçoit un bouclier de la part d'un allié ou quand un champion ennemi proche est immobilisé, ses 2 prochaines attaques de base infligeront des dégâts magiques supplémentaires.",
+      "image": "Lucian_P.png"
+    }
+  },
+  {
+    "champion-id": "Lulu",
+    "passive": {
+      "name": "Pix, le Compagnon féérique",
+      "description": "Pix tire des projectiles magiques quand le champion qu'il suit attaque une autre unité ennemie. Ces tirs sont guidés, mais ils peuvent être interceptés par d'autres unités.",
+      "image": "Lulu_P.png"
+    }
+  },
+  {
+    "champion-id": "Lux",
+    "passive": {
+      "name": "Illumination",
+      "description": "Les compétences de Lux infligeant des dégâts chargent la cible en énergie pendant quelques secondes. La prochaine attaque de Lux embrase l'énergie, infligeant des dégâts magiques supplémentaires à la cible (en fonction du niveau de Lux).",
+      "image": "Lux_P.png"
+    }
+  },
+  {
+    "champion-id": "Malphite",
+    "passive": {
+      "name": "Bouclier de granit",
+      "description": "Malphite est protégé par un bouclier de roche qui absorbe des dégâts équivalents à 10% de ses PV max. Si Malphite n'est pas touché pendant quelques secondes, l'effet se recharge.",
+      "image": "Malphite_P.png"
+    }
+  },
+  {
+    "champion-id": "Malzahar",
+    "passive": {
+      "name": "Plan du Néant",
+      "description": "Quand il ne subit pas de dégâts ou de contrôle de foule pendant un temps, Malzahar gagne une énorme réduction des dégâts et devient insensible aux contrôles de foule. Cet effet perdure pendant un court instant après avoir subi des dégâts.",
+      "image": "Malzahar_P.png"
+    }
+  },
+  {
+    "champion-id": "Maokai",
+    "passive": {
+      "name": "Sève magique",
+      "description": "L'attaque de base de Maokai a un effet qui lui rend des PV et qui inflige des dégâts supplémentaires, avec un délai de récupération modéré. Chaque fois que Maokai lance une compétence ou est touché par une compétence ennemie, ce délai de récupération est réduit.",
+      "image": "Maokai_P.png"
+    }
+  },
+  {
+    "champion-id": "MasterYi",
+    "passive": {
+      "name": "Coup double",
+      "description": "Après plusieurs attaques consécutives, Maître Yi frappe deux fois.",
+      "image": "MasterYi_P.png"
+    }
+  },
+  {
+    "champion-id": "Mel",
+    "passive": {
+      "name": "Luminescence incandescente",
+      "description": "Chaque fois que Mel utilise une compétence, elle gagne trois projectiles bonus (neuf max) pour sa prochaine attaque.<br><br>Lorsque Mel inflige des dégâts grâce à une compétence ou une attaque, elle applique Accablement (cumulable à l'infini). S'il y a suffisamment d'effets cumulés sur un ennemi quand Mel le touche, les effets sont consommés pour exécuter la cible.",
+      "image": "Mel_P.png"
+    }
+  },
+  {
+    "champion-id": "Milio",
+    "passive": {
+      "name": "Tout feu tout flamme",
+      "description": "Les compétences de Milio enchantent les alliés touchés, ce qui permet aux prochains dégâts de ces alliés d'infliger des dégâts supplémentaires et de brûler leur cible.",
+      "image": "Milio_P.png"
+    }
+  },
+  {
+    "champion-id": "MissFortune",
+    "passive": {
+      "name": "Cœur volage",
+      "description": "Miss Fortune inflige des dégâts physiques supplémentaires quand elle attaque une nouvelle cible.",
+      "image": "MissFortune_P.png"
+    }
+  },
+  {
+    "champion-id": "Mordekaiser",
+    "passive": {
+      "name": "Vortex de ténèbres",
+      "description": "Après 3 attaques ou compétences contre des champions ou des monstres, Mordekaiser gagne un puissant halo de dégâts et augmente sa vitesse de déplacement.",
+      "image": "Mordekaiser_P.png"
+    }
+  },
+  {
+    "champion-id": "Morgana",
+    "passive": {
+      "name": "Siphon d'âme",
+      "description": "Morgana peut drainer l'esprit de ses ennemis. Elle récupère des PV quand elle blesse des champions, des grands sbires et des monstres grands ou moyens de la jungle.",
+      "image": "Morgana_P.png"
+    }
+  },
+  {
+    "champion-id": "Naafiri",
+    "passive": {
+      "name": "La meute s'agrandit",
+      "description": "Naafiri fait apparaître des membres de meute qui attaquent les cibles de ses attaques et de ses compétences.",
+      "image": "Naafiri_P.png"
+    }
+  },
+  {
+    "champion-id": "Nami",
+    "passive": {
+      "name": "Déferlantes",
+      "description": "Quand les compétences de Nami touchent des champions alliés, la vitesse de déplacement de ces champions augmente un court instant.",
+      "image": "Nami_P.png"
+    }
+  },
+  {
+    "champion-id": "Nasus",
+    "passive": {
+      "name": "Mangeur d'âmes",
+      "description": "Nasus draine l'énergie spirituelle de son adversaire et profite d'un bonus de Vol de vie.",
+      "image": "Nasus_P.png"
+    }
+  },
+  {
+    "champion-id": "Nautilus",
+    "passive": {
+      "name": "Coup écrasant",
+      "description": "La première attaque de Nautilus contre une cible inflige des dégâts physiques supplémentaires et l'immobilise brièvement.",
+      "image": "Nautilus_P.png"
+    }
+  },
+  {
+    "champion-id": "Neeko",
+    "passive": {
+      "name": "Mirage inné",
+      "description": "Neeko peut prendre l'apparence d'un champion allié ou d'autres unités sur la carte. Votre déguisement prend fin si vous subissez une immobilisation, lancez des compétences offensives, infligez des dégâts aux tourelles ennemies (uniquement si vous avez pris la forme d'un non-champion) ou si vous subissez des dégâts équivalents aux PV de votre déguisement.",
+      "image": "Neeko_P.png"
+    }
+  },
+  {
+    "champion-id": "Nidalee",
+    "passive": {
+      "name": "Prédateur",
+      "description": "Dans les herbes hautes, la vitesse de déplacement de Nidalee augmente de 10% pendant 2 sec. Le bonus passe à 30% si Nidalee va vers des champions ennemis visibles à moins de 1400 unités de distance.<br><br>Quand elle touche des champions ou des monstres avec Javelot ou Guérilla, Nidalee se met à les <font color='#FFF673'>chasser</font> et obtient une <font color='#ee91d7'>vision pure</font> de ces cibles pendant 4 sec. Pendant ce temps, la vitesse de déplacement de Nidalee augmente de 10% (30% vers les cibles <font color='#FFF673'>chassées</font>) et, contre ces cibles, Mise à terre et Bond sont renforcés.",
+      "image": "Nidalee_P.png"
+    }
+  },
+  {
+    "champion-id": "Nilah",
+    "passive": {
+      "name": "Joie éternelle",
+      "description": "Nilah gagne plus d'expérience quand elle tue des sbires. De plus, elle renforce et partage les soins et boucliers des alliés proches.",
+      "image": "Nilah_P.png"
+    }
+  },
+  {
+    "champion-id": "Nocturne",
+    "passive": {
+      "name": "Lames d'ombre",
+      "description": "Toutes les quelques secondes, la prochaine attaque de Nocturne frappe les ennemis proches, infligeant des dégâts physiques supplémentaires et lui rendant des PV. <br><br>Les attaques de base de Nocturne réduisent ce délai.",
+      "image": "Nocturne_P.png"
+    }
+  },
+  {
+    "champion-id": "Nunu",
+    "passive": {
+      "name": "Appel de Freljord",
+      "description": "Nunu augmente les vitesses d'attaque et de déplacement de Willump et d'un allié proche, et les attaques de base de Willump infligent des dégâts aux ennemis proches de la cible.",
+      "image": "Nunu_P.png"
+    }
+  },
+  {
+    "champion-id": "Olaf",
+    "passive": {
+      "name": "Rage du berzerker",
+      "description": "Olaf gagne de la vitesse d'attaque et du vol de vie selon ses PV manquants.",
+      "image": "Olaf_P.png"
+    }
+  },
+  {
+    "champion-id": "Orianna",
+    "passive": {
+      "name": "Remontoir",
+      "description": "Les attaques d'Orianna infligent des dégâts magiques supplémentaires. Plus Orianna attaque la même cible, plus les dégâts sont importants.",
+      "image": "Orianna_P.png"
+    }
+  },
+  {
+    "champion-id": "Ornn",
+    "passive": {
+      "name": "Forgeron ambulant",
+      "description": "Ornn augmente tous ses bonus d'armure et de résistance magique.<br><br>Ornn peut dépenser des PO pour forger des objets non consommables n'importe où sur la carte.<br><br>De plus, il peut créer des chefs-d'œuvre pour ses alliés ou lui-même.",
+      "image": "Ornn_P.png"
+    }
+  },
+  {
+    "champion-id": "Pantheon",
+    "passive": {
+      "name": "Ardeur mortelle",
+      "description": "Après un certain nombre de compétences ou d'attaques, la prochaine compétence de Pantheon est renforcée.",
+      "image": "Pantheon_P.png"
+    }
+  },
+  {
+    "champion-id": "Poppy",
+    "passive": {
+      "name": "Ambassadrice de fer",
+      "description": "Poppy lance son écu et le fait rebondir sur sa cible. Poppy peut le ramasser pour obtenir un bouclier temporaire.",
+      "image": "Poppy_P.png"
+    }
+  },
+  {
+    "champion-id": "Pyke",
+    "passive": {
+      "name": "Don des noyés",
+      "description": "Quand Pyke n'est pas vu par les ennemis, il régénère les dégâts que les champions lui ont récemment infligés. Par ailleurs, Pyke ne peut pas augmenter ses PV max ; tous ses PV supplémentaires sont convertis en dégâts d'attaque.",
+      "image": "Pyke_P.png"
+    }
+  },
+  {
+    "champion-id": "Qiyana",
+    "passive": {
+      "name": "Privilège royal",
+      "description": "La première compétence ou attaque de base de Qiyana contre un ennemi inflige des dégâts supplémentaires.",
+      "image": "Qiyana_P.png"
+    }
+  },
+  {
+    "champion-id": "Quinn",
+    "passive": {
+      "name": "Busard",
+      "description": "Valor, l'aigle demacien de Quinn, marque périodiquement des ennemis, les rendant <font color='#FFF673'>vulnérables</font>. La première attaque de base de Quinn contre une cible <font color='#FFF673'>vulnérable</font> inflige des dégâts physiques supplémentaires.",
+      "image": "Quinn_P.png"
+    }
+  },
+  {
+    "champion-id": "Rakan",
+    "passive": {
+      "name": "Plumes enchantées",
+      "description": "Rakan gagne périodiquement un bouclier.",
+      "image": "Rakan_P.png"
+    }
+  },
+  {
+    "champion-id": "Rammus",
+    "passive": {
+      "name": "Carapace cloutée",
+      "description": "Rammus gagne des dégâts d'attaque bonus en fonction de son armure et de sa résistance magique.",
+      "image": "Rammus_P.png"
+    }
+  },
+  {
+    "champion-id": "RekSai",
+    "passive": {
+      "name": "Fureur des Xer'Sai",
+      "description": "Rek'Sai génère de la Fureur avec ses attaques et quand elle frappe un ennemi avec une compétence de base. Quand elle est enfouie, elle consomme sa Fureur pour récupérer ses PV.",
+      "image": "RekSai_P.png"
+    }
+  },
+  {
+    "champion-id": "Rell",
+    "passive": {
+      "name": "Mise en pièces",
+      "description": "Les attaques et les compétences de Rell infligent des dégâts magiques bonus et volent de l'armure et de la résistance magique à l'impact.",
+      "image": "Rell_P.png"
+    }
+  },
+  {
+    "champion-id": "Renata",
+    "passive": {
+      "name": "Pression",
+      "description": "Les attaques de Renata infligent des dégâts supplémentaires et marquent les ennemis. Les alliés de Renata peuvent infliger des dégâts supplémentaires aux ennemis marqués.",
+      "image": "Renata_P.png"
+    }
+  },
+  {
+    "champion-id": "Renekton",
+    "passive": {
+      "name": "Règne de la colère",
+      "description": "Les attaques de Renekton génèrent de la Fureur, et encore plus quand il lui reste peu de PV. Cette Fureur peut renforcer ses compétences en leur conférant des effets supplémentaires.",
+      "image": "Renekton_P.png"
+    }
+  },
+  {
+    "champion-id": "Rengar",
+    "passive": {
+      "name": "Prédateur invisible",
+      "description": "Quand Rengar est dans les hautes herbes, son attaque de base le fait bondir sur un ennemi.<br><br>Rengar génère de la Férocité chaque fois qu'il lance une compétence. Au maximum de Férocité, sa prochaine compétence est renforcée.<br><br>Tuer des champions ennemis ajoute des trophées au <font color='#BBFFFF'>Collier de dents</font> de Rengar, ce qui augmente ses dégâts d'attaque.",
+      "image": "Rengar_P.png"
+    }
+  },
+  {
+    "champion-id": "Riven",
+    "passive": {
+      "name": "Lame runique",
+      "description": "Les compétences de Riven chargent sa lame, ce qui permet à ses attaques de base d'infliger des dégâts supplémentaires en consommant des charges.",
+      "image": "Riven_P.png"
+    }
+  },
+  {
+    "champion-id": "Rumble",
+    "passive": {
+      "name": "Titan de bric-à-brac",
+      "description": "Chaque compétence lancée par Rumble augmente sa Vapeur. Quand Rumble atteint 50% de Vapeur, il entre dans la Zone rouge, ce qui confère des effets bonus à ses compétences de base. Quand il atteint 100% de Vapeur, il entre en Surchauffe, ce qui lui octroie de la vitesse d'attaque bonus et lui permet d'infliger des dégâts supplémentaires avec ses attaques de base, mais l'empêche d'utiliser ses compétences pendant quelques secondes.",
+      "image": "Rumble_P.png"
+    }
+  },
+  {
+    "champion-id": "Ryze",
+    "passive": {
+      "name": "Maîtrise des arcanes",
+      "description": "<mainText>Les compétences de Ryze infligent des dégâts supplémentaires en fonction de son mana supplémentaire, et son mana max est augmenté d'un pourcentage en fonction de sa puissance.</mainText>",
+      "image": "Ryze_P.png"
+    }
+  },
+  {
+    "champion-id": "Samira",
+    "passive": {
+      "name": "Élan téméraire",
+      "description": "Samira fait des combos en enchaînant des attaques ou compétences différentes de la précédente. En mêlée, les attaques de Samira infligent des dégâts magiques supplémentaires. Les attaques de Samira contre les ennemis affectés par des effets <status>immobilisants</status> la font se ruer à portée d'attaque. Si l'ennemi est <status>projeté dans les airs</status>, elle le maintient brièvement <status>dans les airs</status>.",
+      "image": "Samira_P.png"
+    }
+  },
+  {
+    "champion-id": "Sejuani",
+    "passive": {
+      "name": "Fureur du nord",
+      "description": "En dehors des combats, Sejuani gagne Armure de glace, qui augmente son armure et sa résistance magique et l'immunise contre les ralentissements. Armure de glace persiste un court instant après que Sejuani a subi des dégâts.  Sejuani peut blesser un ennemi étourdi pour le fracasser, infligeant d'énormes dégâts magiques.",
+      "image": "Sejuani_P.png"
+    }
+  },
+  {
+    "champion-id": "Senna",
+    "passive": {
+      "name": "Absolution",
+      "description": "Lorsque des unités meurent près de Senna, leurs âmes sont parfois prises au piège dans la Brume noire. Senna peut attaquer ces âmes pour les libérer et absorber la Brume qui les retenait. La Brume renforce son canon en pierre-relique en augmentant ses dégâts d'attaque, sa portée d'attaque et ses chances de coup critique. <br><br>Les attaques du canon en pierre-relique de Senna tirent plus lentement, infligent des dégâts supplémentaires et lui confèrent brièvement une partie de la vitesse de déplacement de sa cible.",
+      "image": "Senna_P.png"
+    }
+  },
+  {
+    "champion-id": "Sett",
+    "passive": {
+      "name": "Roi de l'arène",
+      "description": "Lors de ses attaques de base, Sett alterne son direct du gauche et son direct du droit. Le direct du droit est un peu plus puissant et rapide. De plus, Sett déteste perdre, ce qui augmente la régénération de ses PV selon ses PV manquants.",
+      "image": "Sett_P.png"
+    }
+  },
+  {
+    "champion-id": "Shaco",
+    "passive": {
+      "name": "Traîtrise",
+      "description": "Les attaques de base et la compétence Poison double de Shaco infligent des dégâts supplémentaires lorsqu'elles frappent dans le dos d'un ennemi.",
+      "image": "Shaco_P.png"
+    }
+  },
+  {
+    "champion-id": "Shen",
+    "passive": {
+      "name": "Barrière de ki",
+      "description": "Après avoir lancé une compétence, Shen gagne un bouclier. Affecter d'autres champions réduit le délai de récupération de cet effet.",
+      "image": "Shen_P.png"
+    }
+  },
+  {
+    "champion-id": "Shyvana",
+    "passive": {
+      "name": "Armure d'écailles",
+      "description": "Les éliminations de champions ennemis, de grands sbires et de grands monstres confèrent à Shyvana des effets Armure d'écailles, améliorant ses résistances.",
+      "image": "Shyvana_P.png"
+    }
+  },
+  {
+    "champion-id": "Singed",
+    "passive": {
+      "name": "Sillage toxique",
+      "description": "Singed bénéficie de l'aspiration des champions proches, gagnant un bref bonus en vitesse de déplacement quand il les dépasse.",
+      "image": "Singed_P.png"
+    }
+  },
+  {
+    "champion-id": "Sion",
+    "passive": {
+      "name": "Gloire posthume",
+      "description": "Après avoir été tué, Sion revient temporairement à la vie, mais ses PV diminuent rapidement. Ses attaques deviennent très rapides, soignent Sion et infligent des dégâts supplémentaires en fonction des PV max de la cible.",
+      "image": "Sion_P.png"
+    }
+  },
+  {
+    "champion-id": "Sivir",
+    "passive": {
+      "name": "Mille-pattes",
+      "description": "Sivir gagne un bref bonus en vitesse de déplacement quand elle attaque un champion ennemi.",
+      "image": "Sivir_P.png"
+    }
+  },
+  {
+    "champion-id": "Skarner",
+    "passive": {
+      "name": "Échos des vibrations",
+      "description": "Les attaques de Skarner, Terre brisée, Soulèvement et Empalement appliquent Tectonique. Au maximum d'effets Tectonique cumulés, les ennemis subissent des dégâts magiques selon leurs PV max sur la durée.",
+      "image": "Skarner_P.png"
+    }
+  },
+  {
+    "champion-id": "Smolder",
+    "passive": {
+      "name": "Dragon en herbe",
+      "description": "Toucher des champions avec une compétence et éliminer des ennemis avec Boule de feu draconique octroie à Smolder un effet de Dragon en herbe. Les effets ainsi cumulés augmentent les dégâts des compétences de base de Smolder.",
+      "image": "Smolder_P.png"
+    }
+  },
+  {
+    "champion-id": "Sona",
+    "passive": {
+      "name": "Accord de puissance",
+      "description": "<passive>Accelerando</passive> : les compétences de base de Sona octroient une accélération de compétence (hors ultime) lorsqu'elles sont correctement utilisées, jusqu'à un maximum. Au-delà de celui-ci, bien utiliser une compétence réduit le délai de récupération de l'ultime de Sona.<br><br><passive>Accord de puissance</passive> : après avoir lancé quelques compétences, la prochaine attaque de Sona inflige des dégâts magiques bonus et applique un effet supplémentaire selon la dernière compétence de base lancée.",
+      "image": "Sona_P.png"
+    }
+  },
+  {
+    "champion-id": "Soraka",
+    "passive": {
+      "name": "Salut",
+      "description": "Soraka court plus vite en direction des alliés affaiblis à proximité.",
+      "image": "Soraka_P.png"
+    }
+  },
+  {
+    "champion-id": "Swain",
+    "passive": {
+      "name": "Nuée de corbeaux",
+      "description": "Les corbeaux de Swain collectent des <i>fragments d'âme</i> qui lui rendent des PV et augmentent définitivement ses PV max.",
+      "image": "Swain_P.png"
+    }
+  },
+  {
+    "champion-id": "Sylas",
+    "passive": {
+      "name": "Volée de pétricite",
+      "description": "Après avoir lancé une compétence, Sylas stocke une charge de Volée de pétricite. Les attaques de base de Sylas dépensent une charge pour donner un coup de chaînes énergisé autour de lui, infligeant des dégâts magiques supplémentaires aux ennemis touchés. Tant que Sylas possède une charge de Volée de pétricite, sa vitesse d'attaque est augmentée. ",
+      "image": "Sylas_P.png"
+    }
+  },
+  {
+    "champion-id": "Syndra",
+    "passive": {
+      "name": "Transcendance",
+      "description": "Syndra collecte des éclats de courroux quand elle gagne des niveaux et quand elle blesse des ennemis, ce qui améliore ses compétences.<br><br><font color='#FF9900'>Sphère noire</font> : Syndra peut stocker une charge supplémentaire.<br><font color='#FF9900'>Force de la volonté</font> : dégâts bruts supplémentaires.<br><font color='#FF9900'>Dispersion des faibles</font> : largeur augmentée et ralentit toutes les cibles.<br><font color='#FF9900'>Déchaînement de puissance</font> : exécute les cibles dont les PV sont bas.",
+      "image": "Syndra_P.png"
+    }
+  },
+  {
+    "champion-id": "Seraphine",
+    "passive": {
+      "name": "Présence sur scène",
+      "description": "Toutes les trois compétences de base, Séraphine lance deux fois la compétence de base choisie. De plus, lancer des compétences près d'alliés permet à sa prochaine attaque de base d'avoir une plus grande portée et d'infliger des dégâts magiques supplémentaires.",
+      "image": "Seraphine_P.png"
+    }
+  },
+  {
+    "champion-id": "TahmKench",
+    "passive": {
+      "name": "Goût acquis",
+      "description": "Tahm Kench met tout son poids dans ses attaques, permettant à ses PV totaux d'augmenter ses dégâts. Blesser des champions ennemis leur applique des effets <spellName>Goût acquis</spellName>. À 3 effets cumulés, Tahm Kench peut utiliser <spellName>Dévoration</spellName> sur un champion ennemi.",
+      "image": "TahmKench_P.png"
+    }
+  },
+  {
+    "champion-id": "Taliyah",
+    "passive": {
+      "name": "Surf tellurique",
+      "description": "Taliyah augmente sa vitesse de déplacement lorsqu'elle est près des murs.",
+      "image": "Taliyah_P.png"
+    }
+  },
+  {
+    "champion-id": "Talon",
+    "passive": {
+      "name": "Saignée fatale",
+      "description": "Les compétences de Talon blessent les champions et les grands monstres (cumulable 3 fois). Quand Talon lance une attaque de base sur un champion portant 3 effets Blessure, ce champion se met à saigner et subit d'importants dégâts sur la durée.",
+      "image": "Talon_P.png"
+    }
+  },
+  {
+    "champion-id": "Taric",
+    "passive": {
+      "name": "Plastronneur",
+      "description": "Lancer des compétences renforce les 2 prochaines attaques de base de Taric, leur permettant d'infliger des dégâts magiques supplémentaires, de réduire les délais de récupération de ses compétences et de s'enchaîner rapidement.",
+      "image": "Taric_P.png"
+    }
+  },
+  {
+    "champion-id": "Teemo",
+    "passive": {
+      "name": "Guérilla",
+      "description": "Si Teemo reste immobile et sans agir pendant un court instant, il devient invisible indéfiniment. Dans les herbes hautes, Teemo peut activer et maintenir son invisibilité tout en se déplaçant. Quand il quitte son invisibilité, Teemo profite de l'Effet de surprise, augmentant sa vitesse d'attaque pendant quelques secondes.",
+      "image": "Teemo_P.png"
+    }
+  },
+  {
+    "champion-id": "Thresh",
+    "passive": {
+      "name": "Damnation",
+      "description": "Thresh peut collecter les âmes des ennemis qui meurent près de lui, augmentant définitivement son armure et sa puissance.",
+      "image": "Thresh_P.png"
+    }
+  },
+  {
+    "champion-id": "Tristana",
+    "passive": {
+      "name": "Tir de précision",
+      "description": "Augmente la portée d'attaque de Tristana quand elle gagne un niveau.",
+      "image": "Tristana_P.png"
+    }
+  },
+  {
+    "champion-id": "Trundle",
+    "passive": {
+      "name": "Tribut du roi",
+      "description": "Quand une unité ennemie meurt près de Trundle, il récupère un pourcentage des PV max de celle-ci.",
+      "image": "Trundle_P.png"
+    }
+  },
+  {
+    "champion-id": "Tryndamere",
+    "passive": {
+      "name": "Vague de violence",
+      "description": "Tryndamere gagne de la Fureur à chaque attaque, coup critique et coup de grâce qu'il inflige. La Fureur augmente passivement ses chances de coup critique et elle peut être utilisée par sa compétence Soif de sang.",
+      "image": "Tryndamere_P.png"
+    }
+  },
+  {
+    "champion-id": "TwistedFate",
+    "passive": {
+      "name": "Dé pipé",
+      "description": "Quand il tue une unité, Twisted Fate lance son dé « porte-bonheur » et reçoit entre 1 et 6 PO supplémentaires.",
+      "image": "TwistedFate_P.png"
+    }
+  },
+  {
+    "champion-id": "Twitch",
+    "passive": {
+      "name": "Venin mortel",
+      "description": "Les attaques de base de Twitch contaminent sa cible, lui infligeant des dégâts bruts chaque seconde.",
+      "image": "Twitch_P.png"
+    }
+  },
+  {
+    "champion-id": "Udyr",
+    "passive": {
+      "name": "Canalisation des esprits",
+      "description": "Udyr possède quatre compétences de base qu'il peut utiliser pour changer de posture. Réactiver une compétence renouvelle ses effets et en ajoute d'autres. De plus, après avoir utilisé une compétence, les deux prochaines attaques d'Udyr gagnent de la vitesse d'attaque.",
+      "image": "Udyr_P.png"
+    }
+  },
+  {
+    "champion-id": "Urgot",
+    "passive": {
+      "name": "Flammes purificatrices",
+      "description": "Les attaques de base et Géhenne d'Urgot font jaillir des jets de flammes de ses jambes, infligeant des dégâts physiques.",
+      "image": "Urgot_P.png"
+    }
+  },
+  {
+    "champion-id": "Varus",
+    "passive": {
+      "name": "Vengeance incarnée",
+      "description": "Quand il tue un ennemi ou quand il réussit une assistance, Varus gagne temporairement des dégâts d'attaque et de la puissance. Ce bonus est plus important si l'ennemi tué est un champion.",
+      "image": "Varus_P.png"
+    }
+  },
+  {
+    "champion-id": "Vayne",
+    "passive": {
+      "name": "Chasseresse nocturne",
+      "description": "Vayne traque sans relâche les êtres malfaisants, gagnant de la vitesse de déplacement vers les champions ennemis proches.",
+      "image": "Vayne_P.png"
+    }
+  },
+  {
+    "champion-id": "Veigar",
+    "passive": {
+      "name": "Pouvoir maléfique phénoménal",
+      "description": "Veigar est le plus grand mal qui ait jamais frappé Runeterra, et son pouvoir est encore en pleine croissance ! Frapper un champion ennemi avec une compétence, tuer un champion ou effectuer une assistance octroie à Veigar un bonus permanent en puissance.",
+      "image": "Veigar_P.png"
+    }
+  },
+  {
+    "champion-id": "Velkoz",
+    "passive": {
+      "name": "Décomposition organique",
+      "description": "Les compétences de Vel'Koz appliquent des effets <keywordName>Décomposition organique</keywordName> aux ennemis touchés. À 3 effets cumulés, l'ennemi subit une explosion de dégâts bruts.",
+      "image": "Velkoz_P.png"
+    }
+  },
+  {
+    "champion-id": "Vex",
+    "passive": {
+      "name": "Malheur et Désespoir",
+      "description": "Vex est régulièrement renforcée, ce qui permet à sa prochaine compétence de base d'effrayer les ennemis et d'interrompre les ruées. Chaque fois qu'un ennemi proche fait une ruée, Vex applique une marque qui, si elle est consommée, inflige des dégâts supplémentaires et réduit le délai de récupération du renforcement.",
+      "image": "Vex_P.png"
+    }
+  },
+  {
+    "champion-id": "Vi",
+    "passive": {
+      "name": "Bouclier antichoc",
+      "description": "Vi charge un bouclier sur la durée. Le bouclier peut être activé en frappant un ennemi avec une compétence.",
+      "image": "Vi_P.png"
+    }
+  },
+  {
+    "champion-id": "Viego",
+    "passive": {
+      "name": "Assujettissement",
+      "description": "Les ennemis qui meurent devant Viego deviennent des spectres. Quand il attaque un spectre, Viego prend temporairement le contrôle du corps de l'ennemi mort, récupérant un pourcentage des PV max de la cible et gagnant l'accès à ses compétences de base et à ses objets. Viego ne gagne pas l'accès à l'ultime de la cible, mais peut lancer son propre ultime gratuitement.",
+      "image": "Viego_P.png"
+    }
+  },
+  {
+    "champion-id": "Viktor",
+    "passive": {
+      "name": "Glorieuse évolution",
+      "description": "Viktor gagne des fragments Hextech chaque fois qu'il tue un ennemi. Tous les 100 fragments Hextech, Viktor améliore définitivement une de ses compétences actives. Après avoir amélioré toutes ses compétences de base, il peut récupérer 100 fragments Hextech pour améliorer sa compétence ultime.",
+      "image": "Viktor_P.png"
+    }
+  },
+  {
+    "champion-id": "Vladimir",
+    "passive": {
+      "name": "Pacte de sang",
+      "description": "Vladimir gagne 1 pt de puissance tous les 30 PV bonus, et 1.6 PV bonus tous les 1 pt de puissance (ces effets ne se cumulent pas entre eux).",
+      "image": "Vladimir_P.png"
+    }
+  },
+  {
+    "champion-id": "Volibear",
+    "passive": {
+      "name": "Tempête impitoyable",
+      "description": "Les attaques et les compétences de Volibear augmentent sa vitesse d'attaque. Au bout d'un moment, ses attaques infligent des dégâts magiques supplémentaires aux ennemis proches.",
+      "image": "Volibear_P.png"
+    }
+  },
+  {
+    "champion-id": "Warwick",
+    "passive": {
+      "name": "Soif inextinguible",
+      "description": "Les attaques de base de Warwick infligent des dégâts magiques supplémentaires. Si Warwick a moins de 50% de ses PV, il récupère des PV équivalents à ces dégâts. Si Warwick a moins de 25% de ses PV, le montant rendu est triplé.",
+      "image": "Warwick_P.png"
+    }
+  },
+  {
+    "champion-id": "MonkeyKing",
+    "passive": {
+      "name": "Peau de pierre",
+      "description": "Wukong augmente son armure et la régénération de ses PV lorsqu'il est en combat avec des champions ou des monstres (effet cumulable).",
+      "image": "MonkeyKing_P.png"
+    }
+  },
+  {
+    "champion-id": "Xayah",
+    "passive": {
+      "name": "Plumes perçantes",
+      "description": "Après avoir utilisé une compétence, les prochaines attaques de base de Xayah frapperont toutes les cibles sur leur passage et laisseront une <font color='#C200E1'>plume</font>.",
+      "image": "Xayah_P.png"
+    }
+  },
+  {
+    "champion-id": "Xerath",
+    "passive": {
+      "name": "Afflux de mana",
+      "description": "Les attaques de base de Xerath restaurent régulièrement du mana. À chaque fois que Xerath tue une unité, ce délai de récupération est réduit.",
+      "image": "Xerath_P.png"
+    }
+  },
+  {
+    "champion-id": "XinZhao",
+    "passive": {
+      "name": "Détermination",
+      "description": "Toutes les 3 attaques, Xin Zhao inflige des dégâts supplémentaires et récupère des PV.",
+      "image": "XinZhao_P.png"
+    }
+  },
+  {
+    "champion-id": "Yasuo",
+    "passive": {
+      "name": "Voie du vagabond",
+      "description": "Les chances de coup critique de Yasuo sont augmentées. De plus, Yasuo génère un bouclier quand il se déplace. Le bouclier se déclenche quand un champion ou un monstre lui inflige des dégâts.",
+      "image": "Yasuo_P.png"
+    }
+  },
+  {
+    "champion-id": "Yone",
+    "passive": {
+      "name": "Voie du chasseur",
+      "description": "Une attaque de Yone sur deux inflige des dégâts magiques. De plus, ses chances de coup critique sont augmentées.",
+      "image": "Yone_P.png"
+    }
+  },
+  {
+    "champion-id": "Yorick",
+    "passive": {
+      "name": "Berger des âmes",
+      "description": "<font color='#FF9900'>Horde maudite :</font> Yorick peut invoquer des Goules de Brume pour attaquer les ennemis proches.",
+      "image": "Yorick_P.png"
+    }
+  },
+  {
+    "champion-id": "Yunara",
+    "passive": {
+      "name": "Serment aux Terres premières",
+      "description": "Les coups critiques de Yunara infligent des dégâts magiques bonus.",
+      "image": "Yunara_P.png"
+    }
+  },
+  {
+    "champion-id": "Yuumi",
+    "passive": {
+      "name": "Chat-maraderie",
+      "description": "Périodiquement, quand Yuumi frappe un champion avec une attaque ou une compétence, elle récupère des PV et soigne le prochain allié auquel elle s'attache.<br><br>Lorsque Yuumi est attachée à un allié, elle génère un lien spécial avec lui. L'allié avec lequel son lien est le plus fort renforce les compétences de Yuumi quand elle est attachée à lui.",
+      "image": "Yuumi_P.png"
+    }
+  },
+  {
+    "champion-id": "Zaahen",
+    "passive": {
+      "name": "Guerrier immortel",
+      "description": "Les attaques et compétences de Zaahen qui touchent un champion ennemi lui octroient des effets de Détermination. Chaque effet lui octroie des dégâts d'attaque bonus. Au maximum d'effets cumulés, Zaahen gagne des dégâts d'attaque et peut revenir à la vie.",
+      "image": "Zaahen_P.png"
+    }
+  },
+  {
+    "champion-id": "Zac",
+    "passive": {
+      "name": "Division cellulaire",
+      "description": "À chaque fois que Zac frappe un ennemi avec une compétence, il perd un bout de lui-même qu'il peut absorber pour récupérer des PV. S'il subit des dégâts mortels, Zac se divise en 4 blobs qui tentent de se recombiner. S'il reste des blobs, Zac revient à la vie avec un nombre de PV qui dépend des PV des blobs survivants. Chaque blob a un pourcentage des PV max, de l'armure et de la résistance magique de Zac. Cette compétence a un délai de récupération de 5 minutes.",
+      "image": "Zac_P.png"
+    }
+  },
+  {
+    "champion-id": "Zed",
+    "passive": {
+      "name": "Mépris des faibles",
+      "description": "Les attaques de base de Zed infligent des dégâts magiques supplémentaires aux cibles dont les PV sont faibles. Cet effet ne peut se déclencher sur un même champion ennemi qu'une fois toutes les quelques secondes.",
+      "image": "Zed_P.png"
+    }
+  },
+  {
+    "champion-id": "Zeri",
+    "passive": {
+      "name": "Batterie vivante",
+      "description": "Les attaques de Zeri infligent des dégâts magiques et sont traitées comme des compétences. Se déplacer et lancer Rafale stocke de l'énergie dans le Paquetage ionique de Zeri. Lorsqu'elle est chargée à bloc, sa prochaine attaque inflige des dégâts supplémentaires.",
+      "image": "Zeri_P.png"
+    }
+  },
+  {
+    "champion-id": "Ziggs",
+    "passive": {
+      "name": "Mèche courte",
+      "description": "Périodiquement, la prochaine attaque de base de Ziggs inflige des dégâts magiques supplémentaires. Ce délai est réduit quand Ziggs utilise une compétence.",
+      "image": "Ziggs_P.png"
+    }
+  },
+  {
+    "champion-id": "Zilean",
+    "passive": {
+      "name": "Temps dans une bouteille",
+      "description": "Zilean stocke du temps sous forme d'expérience et peut l'offrir à ses alliés. Quand il a suffisamment d'expérience pour augmenter le niveau d'un allié, il peut la lui offrir en lui cliquant dessus avec le bouton droit. Zilean reçoit autant d'expérience qu'il en donne.",
+      "image": "Zilean_P.png"
+    }
+  },
+  {
+    "champion-id": "Zoe",
+    "passive": {
+      "name": "Plus d'étincelles !",
+      "description": "Après avoir lancé une compétence, la prochaine attaque de base de Zoé inflige des dégâts magiques supplémentaires.",
+      "image": "Zoe_P.png"
+    }
+  },
+  {
+    "champion-id": "Zyra",
+    "passive": {
+      "name": "Jardin de ronces",
+      "description": "Des graines apparaissent régulièrement autour de Zyra, de plus en plus souvent au fur et à mesure qu'elle gagne des niveaux. Zyra peut lancer Épines funestes ou Racines fixatrices près des graines pour faire pousser des plantes qui combattront pour elle.",
+      "image": "Zyra_P.png"
+    }
+  }
+]

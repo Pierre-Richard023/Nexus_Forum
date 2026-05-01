@@ -21,8 +21,23 @@ final class ProfileController extends AbstractController
     public function __construct(private readonly EntityManagerInterface $em, private readonly UserPasswordHasherInterface $passwordHasher) {}
 
 
+
     #[Route('/', name: 'profile')]
-    public function index(Request $request): Response
+    public function index(): Response
+    {
+
+        $user = $this->getUser();
+
+
+        return $this->render('profile/index.html.twig', [
+            'controller_name' => 'ProfileController',
+            'user' => $user,
+        ]);
+    }
+
+
+    #[Route('/settings', name: 'settings')]
+    public function settings(Request $request): Response
     {
 
 
@@ -36,7 +51,7 @@ final class ProfileController extends AbstractController
             $this->em->flush();
             $user->setImageFile(null);
 
-            return $this->redirectToRoute('profile');
+            return $this->redirectToRoute('settings');
         }
 
         $changePasswordForm = $this->createForm(ChangePasswordProfileType::class);
@@ -52,7 +67,7 @@ final class ProfileController extends AbstractController
                 $this->em->persist($user);
                 $this->em->flush();
                 $this->addFlash('modify_password_success', 'Votre mot de passe a bien été modifier');
-                return $this->redirectToRoute('profile');
+                return $this->redirectToRoute('settings');
             }
         }
 
@@ -61,11 +76,11 @@ final class ProfileController extends AbstractController
         if ($userSettingsForm->isSubmitted() && $userSettingsForm->isValid()) {
             $this->em->persist($userSettings);
             $this->em->flush();
-            return $this->redirectToRoute('profile');
+            return $this->redirectToRoute('settings');
         }
 
 
-        return $this->render('profile/profile.html.twig', [
+        return $this->render('profile/settings/settings.html.twig', [
             'controller_name' => 'ProfileController',
             'profileForm' => $profileForm,
             'changePasswordForm' => $changePasswordForm,
@@ -73,7 +88,7 @@ final class ProfileController extends AbstractController
         ]);
     }
 
-    
+
     #[Route('/delete', name: 'profile_delete', methods: ['POST'])]
     public function deleteUser(Request $request, TokenStorageInterface $tokenStorage): Response
     {
@@ -86,7 +101,7 @@ final class ProfileController extends AbstractController
         $password = $request->request->get('plainpassword');
         if (!$this->passwordHasher->isPasswordValid($user, $password)) {
             $this->addFlash('delete_account_error', 'Mot de passe incorrect impossible de supprimer le compte');
-            return $this->redirectToRoute('profile');
+            return $this->redirectToRoute('settings');
         }
         $this->em->remove($user);
         $this->em->flush();

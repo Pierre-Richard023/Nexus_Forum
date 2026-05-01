@@ -15,3 +15,32 @@ vich_uploader:
             inject_on_load: false
             delete_on_update: true
             delete_on_remove: true
+
+        champion_images:
+            uri_prefix: /images/champion_images
+            upload_destination: '%kernel.project_dir%/public/images/champion_images'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        champion_passive_images:
+            uri_prefix: /images/champion_passive_images
+            upload_destination: '%kernel.project_dir%/public/images/champion_passive_images'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        champion_spell_images:
+            uri_prefix: /images/champion_spell_images
+            upload_destination: '%kernel.project_dir%/public/images/champion_spell_images'
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer          
+
+            inject_on_load: false
+            delete_on_update: true
+            delete_on_remove: true
+
+        

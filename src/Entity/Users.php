@@ -74,6 +74,12 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $about_me = null;
 
+    #[ORM\ManyToOne]
+    private ?Champions $main_champion = null;
+
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $bio = null;
+
     public function __construct()
     {
         $this->topics = new ArrayCollection();
@@ -286,6 +292,30 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     public function setAboutMe(?string $about_me): static
     {
         $this->about_me = $about_me;
+
+        return $this;
+    }
+
+    public function getMainChampion(): ?Champions
+    {
+        return $this->main_champion;
+    }
+
+    public function setMainChampion(?Champions $main_champion): static
+    {
+        $this->main_champion = $main_champion;
+
+        return $this;
+    }
+
+    public function getBio(): ?string
+    {
+        return $this->bio;
+    }
+
+    public function setBio(?string $bio): static
+    {
+        $this->bio = $bio;
 
         return $this;
     }

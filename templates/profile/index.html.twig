@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ parent() }}
+	|
+	{{ user.username }}
+	- Profil
+{% endblock %}
+
+{% block body %}
+
+	<section class="pt-8">
+		<div class="container">
+			<div class="row g-4">
+
+				<div class="col-xl-8">
+					<div class="vstack gap-4">
+
+						{% include "profile/_profile-card.html.twig" %}
+
+						<div class="card p-0">
+							<div class="card-header border-bottom">
+								<div class="d-flex justify-content-between align-items-center">
+									<h4 class="card-title mb-0">Aperçu</h4>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div>
+									{{ user.aboutMe|default('Aucune description disponible.') }}
+								</div>
+
+								<h5 class="mt-4 mb-3">Informations de base</h5>
+
+								<div class="row g-4">
+									<div class="col-sm-6 col-md-4">
+										<h6 class="mb-1">
+											<i class="fa-solid fa-up-down-left-right"></i>
+											Position
+										</h6>
+										<p class="mb-0">{{ user.positions|default('Non spécifié') }}</p>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<h6 class="mb-1">
+											<i class="fa-solid fa-medal me-2"></i>
+											Rang
+										</h6>
+										<p class="mb-0">{{ user.ranks|default('Non spécifié') }}</p>
+									</div>
+									<div class="col-sm-6 col-md-4">
+										<h6 class="mb-1">
+											<i class="fa-solid fa-user-secret"></i>
+											Main champion
+										</h6>
+										<p class="mb-0">
+											{{ user.mainChampion.name|default('Non spécifié') }}
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				{% include "profile/_right-sidebar.html.twig" %}
+
+			</div>
+		</div>
+	</section>
+{% endblock %}

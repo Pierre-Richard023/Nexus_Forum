@@ -20,4 +20,7 @@ npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
-/images/profile_pictures/
+/public/images/profile_pictures/
+/public/images/champion_passive_images/
+/public/images/champion_spell_images/
+/public/images/champion_images/
